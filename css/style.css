@@ -352,6 +352,10 @@ svg {
 .icon-menu {
   display: none
 }
+.page__ticker {
+  padding-top: 2.1875rem;
+  padding-bottom: 2.1875rem
+}
 .hero {
   min-height: 100vh;
   position: relative
@@ -391,6 +395,57 @@ svg {
 .mySwiper {
   -webkit-transform: translate(25%,-100%);
   transform: translate(25%,-100%)
+}
+.ticker__wrap {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  gap: 0
+}
+.ticker__items {
+  flex-shrink: 0;
+  display: flex;
+  gap: 2.5rem
+}
+.ticker__item {
+  align-items: center;
+  display: flex;
+  text-align: center;
+  color: #3f1336;
+  font-family: "Open Sans";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase
+}
+.marque {
+  padding-right: 1.875rem;
+  -webkit-animation: scroll 120s linear infinite;
+  animation: scroll 120s linear infinite
+}
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+  }
+  100% {
+    -webkit-transform: translateX(calc(-100% - 20px));
+    transform: translateX(calc(-100% - 20px))
+  }
+}
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+  }
+  100% {
+    -webkit-transform: translateX(calc(-100% - 20px));
+    transform: translateX(calc(-100% - 20px))
+  }
 }
 .swiper {
   overflow: hidden

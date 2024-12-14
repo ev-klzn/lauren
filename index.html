@@ -33,7 +33,7 @@
       visibility: visible;
     }
   </style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241213161107">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241214113750">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 </head>
 
@@ -214,77 +214,339 @@
 						</div>
 					</div>
 				</div>
+				<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241214113750"></script>
+				<script>
+					var swiper = new Swiper(".mySwiper", {
+						loop: true,
+						spaceBetween: 20,
+						slidesPerView: 4,
+						freeMode: true,
+						speed: 2000,
+						observer: true,
+						observeParents: true,
+						autoplay: {
+							delay: 4000,
+							disableOnInteraction: false,
+						},
+						breakpoints: {
+							320: {
+								slidesPerView: 1.1,
+							},
+							375: {
+								slidesPerView: 1.2,
+							},
+							768: {
+								slidesPerView: 2.1,
+							},
+							992: {
+								slidesPerView: 3.1,
+							},
+							1221: {
+								slidesPerView: 4,
+							},
+							1921: {
+								// slidesPerView: 4,
+							},
+						},
+					});
+					var swiper2 = new Swiper(".mySwiper2", {
+						loop: true,
+						observer: true,
+						observeParents: true,
+						speed: 2000,
+						effect: "fade",
+						autoplay: {
+							delay: 4000,
+							disableOnInteraction: false,
+						},
+						thumbs: {
+							swiper: swiper,
+						},
+					});
+				</script>
 			</div>
-			<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241213161107"></script>
-			<script>
-				var swiper = new Swiper(".mySwiper", {
-					loop: true,
-					spaceBetween: 20,
-					slidesPerView: 4,
-					freeMode: true,
-					speed: 2000,
-					observer: true,
-					observeParents: true,
-					autoplay: {
-						delay: 4000,
-						disableOnInteraction: false,
-					},
-					breakpoints: {
-						320: {
-							slidesPerView: 1.1,
-						},
-						375: {
-							slidesPerView: 1.2,
-						},
-						768: {
-							slidesPerView: 2.1,
-						},
-						992: {
-							slidesPerView: 3.1,
-						},
-						1221: {
-							slidesPerView: 4,
-						},
-						1921: {
-							// slidesPerView: 4,
-						},
-					},
-				});
-				var swiper2 = new Swiper(".mySwiper2", {
-					loop: true,
-					observer: true,
-					observeParents: true,
-					speed: 2000,
-					effect: "fade",
-					autoplay: {
-						delay: 4000,
-						disableOnInteraction: false,
-					},
-					thumbs: {
-						swiper: swiper,
-					},
-				});
-			</script>
 			<div id="ticker" class="ticker">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi maiores
-				architecto molestiae veritatis nam maxime atque tempora, fuga
-				consectetur aliquam. Ad repellendus ipsa autem hic magni, sed numquam
-				quos sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				Sequi maiores architecto molestiae veritatis nam maxime atque tempora,
-				fuga consectetur aliquam. Ad repellendus ipsa autem hic magni, sed
-				numquam quos sunt? Lorem ipsum dolor sit amet consectetur adipisicing
-				elit. Sequi maiores architecto molestiae veritatis nam maxime atque
-				tempora, fuga consectetur aliquam. Ad repellendus ipsa autem hic
-				magni, sed numquam quos sunt? Lorem ipsum dolor sit amet consectetur
-				adipisicing elit. Sequi maiores architecto molestiae veritatis nam
-				maxime atque tempora, fuga consectetur aliquam. Ad repellendus ipsa
-				autem hic magni, sed numquam quos sunt? Lorem ipsum dolor sit amet
-				consectetur adipisicing elit. Sequi maiores architecto molestiae
-				veritatis nam maxime atque tempora, fuga consectetur aliquam. Ad
-				repellendus ipsa autem hic magni, sed numquam quos sunt? Lorem ipsum
-				dolor sit amet consectetur adipisicing elit. Sequi maiores architecto
-				molestiae veritatis nam maxime atque tempora, fuga consectetur
-				aliquam. Ad repellendus ipsa autem hic magni, sed numquam quos sunt?
+				<div class="page__ticker ticker">
+					<div class="ticker__wrap">
+						<div class="ticker__items marque">
+							<div class="ticker__item ticker__item--service">
+								Hair Services
+							</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Make Up</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Nail Care</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Waxing</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">
+								Eyelash & Eyebrows
+							</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">
+								Hair Services
+							</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Make Up</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Nail Care</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Waxing</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">
+								Eyelash & Eyebrows
+							</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">
+								Hair Services
+							</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Make Up</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Nail Care</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Waxing</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">
+								Eyelash & Eyebrows
+							</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">
+								Hair Services
+							</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Make Up</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Nail Care</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Waxing</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">
+								Eyelash & Eyebrows
+							</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+						</div>
+						<!--  -->
+						<div class="ticker__items marque">
+							<div class="ticker__item ticker__item--service">
+								Hair Services
+							</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Make Up</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Nail Care</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Waxing</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">
+								Eyelash & Eyebrows
+							</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">
+								Hair Services
+							</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Make Up</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Nail Care</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Waxing</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">
+								Eyelash & Eyebrows
+							</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">
+								Hair Services
+							</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Make Up</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Nail Care</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Waxing</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">
+								Eyelash & Eyebrows
+							</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">
+								Hair Services
+							</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Make Up</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Nail Care</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">Waxing</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+							<div class="ticker__item ticker__item--service">
+								Eyelash & Eyebrows
+							</div>
+							<div class="ticker__item ticker__item--img">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<circle cx="8" cy="8" r="8" fill="#F2CFF0" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<script>
 				const block1 = document.getElementById("hero__img");
@@ -304,7 +566,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20241213161107"></script>
+	<script src="js/app.min.js?_v=20241214113750"></script>
 </body>
 
 </html>
