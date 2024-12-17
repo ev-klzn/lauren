@@ -33,7 +33,7 @@
       visibility: visible;
     }
   </style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241214113750">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241217165605">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 </head>
 
@@ -66,14 +66,14 @@
 		</header>
 
 		<main class="page">
-			<div class="sliders">
+			<section class="sliders">
 				<div class="swiper mySwiper2">
 					<div class="hero__wrapper swiper-wrapper">
 						<div class="hero__slide swiper-slide">
 							<div class="page__hero hero">
 								<img class="hero__image ibg" src="img/hero/1.webp" alt="hero-bg" />
 								<div class="hero__container">
-									<div class="hero__title title">Flawless Beauty Art</div>
+									<h1 class="hero__title title">Flawless Beauty Art</h1>
 									<div class="hero__text text">
 										<p>
 											Makeup is an art form that enhances natural features,
@@ -96,7 +96,7 @@
 							<div class="page__hero hero">
 								<img class="hero__image ibg" src="img/hero/4.webp" alt="hero-bg" />
 								<div class="hero__container">
-									<h1 class="hero__title title">Glamorous Nail Art</h1>
+									<h2 class="hero__title title">Glamorous Nail Art</h2>
 									<div class="hero__text text">
 										<p>
 											A manicure is a hand and nail care treatment that
@@ -118,7 +118,7 @@
 							<div class="page__hero hero">
 								<img class="hero__image ibg ibg--right ibg--top" src="img/hero/2.webp" alt="hero-bg" />
 								<div class="hero__container">
-									<div class="hero__title title">Radiant Hair Revival</div>
+									<h2 class="hero__title title">Radiant Hair Revival</h2>
 									<div class="hero__text text">
 										<p>
 											Hair services encompass a wide range of treatments, from
@@ -141,7 +141,7 @@
 							<div class="page__hero hero">
 								<img class="hero__image ibg" src="img/hero/5.webp" alt="hero-bg" />
 								<div class="hero__container">
-									<div class="hero__title title">Smooth, Silky Skin</div>
+									<h2 class="hero__title title">Smooth, Silky Skin</h2>
 									<div class="hero__text text">
 										<p>
 											Waxing is a popular hair removal method that removes
@@ -164,7 +164,7 @@
 							<div class="page__hero hero">
 								<img class="hero__image ibg ibg--top" src="img/hero/3.webp" alt="hero-bg" />
 								<div class="hero__container">
-									<div class="hero__title title">Lush Lash Look</div>
+									<h2 class="hero__title title">Lush Lash Look</h2>
 									<div class="hero__text text">
 										<p>
 											Eyelash and eyebrow services, including shaping,
@@ -214,7 +214,7 @@
 						</div>
 					</div>
 				</div>
-				<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241214113750"></script>
+				<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241217165605"></script>
 				<script>
 					var swiper = new Swiper(".mySwiper", {
 						loop: true,
@@ -224,10 +224,10 @@
 						speed: 2000,
 						observer: true,
 						observeParents: true,
-						autoplay: {
-							delay: 4000,
-							disableOnInteraction: false,
-						},
+						// autoplay: {
+						//   delay: 4000,
+						//   disableOnInteraction: false,
+						// },
 						breakpoints: {
 							320: {
 								slidesPerView: 1.1,
@@ -255,16 +255,16 @@
 						observeParents: true,
 						speed: 2000,
 						effect: "fade",
-						autoplay: {
-							delay: 4000,
-							disableOnInteraction: false,
-						},
+						// autoplay: {
+						//   delay: 4000,
+						//   disableOnInteraction: false,
+						// },
 						thumbs: {
 							swiper: swiper,
 						},
 					});
 				</script>
-			</div>
+			</section>
 			<div id="ticker" class="ticker">
 				<div class="page__ticker ticker">
 					<div class="ticker__wrap">
@@ -547,26 +547,365 @@
 						</div>
 					</div>
 				</div>
+				<!-- <script>
+            const block1 = document.getElementById("hero__img");
+            const block2 = document.getElementById("ticker");
+            const resizeObserver = new ResizeObserver((entries) => {
+              for (let entry of entries) {
+                const height = entry.contentRect.height;
+                block2.style.marginTop = `-${height}px`;
+              }
+            });
+            resizeObserver.observe(block1);
+          </script> -->
 			</div>
-			<script>
-				const block1 = document.getElementById("hero__img");
-				const block2 = document.getElementById("ticker");
-				const resizeObserver = new ResizeObserver((entries) => {
-					for (let entry of entries) {
-						const height = entry.contentRect.height;
-						block2.style.marginTop = `-${height}px`;
-					}
-				});
-				resizeObserver.observe(block1);
-			</script>
+			<section class="page__services services">
+				<div class="services__container">
+					<div class="header-block header-block--mb">
+						<h2 class="header-block__title">services</h2>
+						<div class="header-block__text text">
+							<p>
+								Beauty services are all about helping you look and feel your
+								best, whether it’s a fresh haircut, vibrant color, or a
+								relaxing facial. These services are designed to make you feel
+								pampered and confident, with options to suit every need, from
+								everyday care to special occasions. It’s the perfect way to
+								treat yourself and give your hair, skin, and nails the love
+								they deserve.
+							</p>
+						</div>
+					</div>
+					<!-- <div class="services__body">
+              <div data-tabs class="tabs">
+                <nav data-tabs-titles class="tabs__navigation">
+                  <button type="button" class="tabs__title _tab-active">
+                    Hair Services
+                  </button>
+                  <button type="button" class="tabs__title">Make-up</button>
+                  <button type="button" class="tabs__title">Nail Care</button>
+                  <button type="button" class="tabs__title">Waxing</button>
+                  <button type="button" class="tabs__title">
+                    Eyelash & Eyebrows
+                  </button>
+                </nav>
+                <div data-tabs-body class="tabs__content">
+                  <div class="tabs__body">
+                    <div class="tabs__about">
+                      <div class="tabs__text text">
+                        <p>
+                          Hair services encompass a wide range of treatments,
+                          from cuts and color to styling and treatments, all
+                          designed to enhance the health, appearance, and
+                          versatility of hair while helping individuals express
+                          their unique style.
+                        </p>
+                      </div>
+                      <div data-spollers class="spollers">
+                        <details
+                          data-watch
+                          data-watch-once
+                          class="spollers__item">
+                          <summary class="spollers__title">
+                            Cuts and Styles
+                          </summary>
+                          <div class="spollers__body">
+                            <div class="spollers__text text">
+                              <p>
+                                відповідають їхнім потребам та очікуванням. Наша
+                                мета - ефективно реалізовувати високоякісні
+                                проєкти, гарантуючи, що кожен крок процесу буде
+                                виконано з ретельністю та увагою до деталей.
+                              </p>
+                              <ul class="spollers__services">
+                                <li>
+                                  <div>
+                                    <h3>Woman Haircut</h3>
+                                    <div>$75+</div>
+                                  </div>
+                                  <div>
+                                    <p>
+                                      A professional haircut tailored to the
+                                      client’s desired style, length, and shape,
+                                      customized to suit the face shape and hair
+                                      texture.
+                                    </p>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </details>
+                      </div>
+                    </div>
+                    <div class="tabs__img">
+                      <img
+                        class="tabs__image ibg"
+                        src="img/services/1.webp"
+                        alt="Image" />
+                    </div>
+                  </div>
+                  <div class="tabs__body">2</div>
+                  <div class="tabs__body">3</div>
+                  <div class="tabs__body">4</div>
+                  <div class="tabs__body">5</div>
+                </div>
+              </div>
+            </div> -->
+				</div>
+			</section>
+			<section class="page__benefits benefits">
+				<div class="benefits__container">
+					<div class="header-block header-block--mb">
+						<h2 class="header-block__title">benefits</h2>
+						<div class="header-block__text text">
+							<p>
+								Our portfolio showcases the artistry and expertise that make
+								us a top full-service beauty salon. From stunning hair
+								transformations and flawless makeup to perfect nails and
+								precision brow shaping, every service we offer is tailored to
+								bring out your unique beauty. Whether you're looking for
+								everyday elegance or a glamorous look for a special occasion,
+								our team takes pride in delivering results that leave you
+								feeling confident and radiant. Explore our work and get
+								inspired for your next beauty moment.
+							</p>
+						</div>
+					</div>
+					<section class="benefits__list">
+						<article class="item-benefits">
+							<div class="item-benefits__img">
+								<img class="item-benefits__image ibg" src="img/benefits/1.webp" alt="Image" />
+							</div>
+							<div class="item-benefits__body">
+								<h3 class="item-benefits__title">Expert Team</h3>
+								<div class="item-benefits__description">
+									Skilled professionals dedicated to delivering flawless
+									results
+								</div>
+							</div>
+						</article>
+						<article class="item-benefits">
+							<div class="item-benefits__img">
+								<img class="item-benefits__image ibg" src="img/benefits/2.webp" alt="Image" />
+							</div>
+							<div class="item-benefits__body">
+								<h3 class="item-benefits__title">Comprehensive Services</h3>
+								<div class="item-benefits__description">
+									Everything you need for hair, nails, brows, and more—all in
+									one place
+								</div>
+							</div>
+						</article>
+						<article class="item-benefits">
+							<div class="item-benefits__img">
+								<img class="item-benefits__image ibg" src="img/benefits/3.webp" alt="Image" />
+							</div>
+							<div class="item-benefits__body">
+								<h3 class="item-benefits__title">Premium Products</h3>
+								<div class="item-benefits__description">
+									High-quality products for lasting beauty and care
+								</div>
+							</div>
+						</article>
+						<article class="item-benefits">
+							<div class="item-benefits__img">
+								<img class="item-benefits__image ibg" src="img/benefits/4.webp" alt="Image" />
+							</div>
+							<div class="item-benefits__body">
+								<h3 class="item-benefits__title">Relaxing Experience</h3>
+								<div class="item-benefits__description">
+									A welcoming atmosphere designed to pamper and rejuvenate you
+								</div>
+							</div>
+						</article>
+					</section>
+				</div>
+			</section>
+			<section class="page__portfolio portfolio">
+				<div class="portfolio__container">
+					<div class="header-block header-block--mb">
+						<h2 class="header-block__title">portfolio</h2>
+						<div class="header-block__text text">
+							<p>
+								Our portfolio showcases the artistry and expertise that make
+								us a top full-service beauty salon. From stunning hair
+								transformations and flawless makeup to perfect nails and
+								precision brow shaping, every service we offer is tailored to
+								bring out your unique beauty. Whether you're looking for
+								everyday elegance or a glamorous look for a special occasion,
+								our team takes pride in delivering results that leave you
+								feeling confident and radiant. Explore our work and get
+								inspired for your next beauty moment.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio__list">
+					<article class="item-portfolio">
+						<div class="item-portfolio__img">
+							<img class="item-portfolio__image ibg" src="img/portfolio/01.webp" alt="Image" />
+						</div>
+						<div class="item-portfolio__body">
+							<h3 class="item-portfolio__title">the low bun hairstyle</h3>
+							<!-- <div class="item-portfolio__descroption">
+                  A professional haircut tailored to the client’s desired style,
+                  length, and shape, customized to suit the face shape and hair
+                  texture
+                </div> -->
+						</div>
+					</article>
+					<article class="item-portfolio">
+						<div class="item-portfolio__img">
+							<img class="item-portfolio__image ibg" src="img/portfolio/02.webp" alt="Image" />
+						</div>
+						<div class="item-portfolio__body">
+							<h3 class="item-portfolio__title">man’s haircut</h3>
+							<!-- <div class="item-portfolio__descroption">
+                  A professional haircut tailored to the client’s desired style,
+                  length, and shape, customized to suit the face shape and hair
+                  texture
+                </div> -->
+						</div>
+					</article>
+					<article class="item-portfolio">
+						<div class="item-portfolio__img">
+							<img class="item-portfolio__image ibg" src="img/portfolio/03.webp" alt="Image" />
+						</div>
+						<div class="item-portfolio__body">
+							<h3 class="item-portfolio__title">classic lash extensions</h3>
+							<!-- <div class="item-portfolio__descroption">
+                  A professional haircut tailored to the client’s desired style,
+                  length, and shape, customized to suit the face shape and hair
+                  texture
+                </div> -->
+						</div>
+					</article>
+					<article class="item-portfolio">
+						<div class="item-portfolio__img">
+							<img class="item-portfolio__image ibg" src="img/portfolio/04.webp" alt="Image" />
+						</div>
+						<div class="item-portfolio__body">
+							<h3 class="item-portfolio__title">short bob with bangs hair</h3>
+							<!-- <div class="item-portfolio__descroption">
+                  A professional haircut tailored to the client’s desired style,
+                  length, and shape, customized to suit the face shape and hair
+                  texture
+                </div> -->
+						</div>
+					</article>
+					<article class="item-portfolio">
+						<div class="item-portfolio__img">
+							<img class="item-portfolio__image ibg" src="img/portfolio/05.webp" alt="Image" />
+						</div>
+						<div class="item-portfolio__body">
+							<h3 class="item-portfolio__title">child haircut and styling</h3>
+							<!-- <div class="item-portfolio__descroption">
+                  A professional haircut tailored to the client’s desired style,
+                  length, and shape, customized to suit the face shape and hair
+                  texture
+                </div> -->
+						</div>
+					</article>
+					<article class="item-portfolio">
+						<div class="item-portfolio__img">
+							<img class="item-portfolio__image ibg" src="img/portfolio/06.webp" alt="Image" />
+						</div>
+						<div class="item-portfolio__body">
+							<h3 class="item-portfolio__title">bridal nail art</h3>
+							<!-- <div class="item-portfolio__descroption">
+                  A professional haircut tailored to the client’s desired style,
+                  length, and shape, customized to suit the face shape and hair
+                  texture
+                </div> -->
+						</div>
+					</article>
+					<article class="item-portfolio">
+						<div class="item-portfolio__img">
+							<img class="item-portfolio__image ibg" src="img/portfolio/07.webp" alt="Image" />
+						</div>
+						<div class="item-portfolio__body">
+							<h3 class="item-portfolio__title">lip waxing</h3>
+							<!-- <div class="item-portfolio__descroption">
+                  A professional haircut tailored to the client’s desired style,
+                  length, and shape, customized to suit the face shape and hair
+                  texture
+                </div> -->
+						</div>
+					</article>
+					<article class="item-portfolio">
+						<div class="item-portfolio__img">
+							<img class="item-portfolio__image ibg" src="img/portfolio/08.webp" alt="Image" />
+						</div>
+						<div class="item-portfolio__body">
+							<h3 class="item-portfolio__title">modern color hair</h3>
+							<!-- <div class="item-portfolio__descroption">
+                  A professional haircut tailored to the client’s desired style,
+                  length, and shape, customized to suit the face shape and hair
+                  texture
+                </div> -->
+						</div>
+					</article>
+					<article class="item-portfolio">
+						<div class="item-portfolio__img">
+							<img class="item-portfolio__image ibg" src="img/portfolio/09.webp" alt="Image" />
+						</div>
+						<div class="item-portfolio__body">
+							<h3 class="item-portfolio__title">low leg waxing</h3>
+							<!-- <div class="item-portfolio__descroption">
+                  A professional haircut tailored to the client’s desired style,
+                  length, and shape, customized to suit the face shape and hair
+                  texture
+                </div> -->
+						</div>
+					</article>
+					<article class="item-portfolio">
+						<div class="item-portfolio__img">
+							<img class="item-portfolio__image ibg" src="img/portfolio/10.webp" alt="Image" />
+						</div>
+						<div class="item-portfolio__body">
+							<h3 class="item-portfolio__title">occasional make up</h3>
+							<!-- <div class="item-portfolio__descroption">
+                  A professional haircut tailored to the client’s desired style,
+                  length, and shape, customized to suit the face shape and hair
+                  texture
+                </div> -->
+						</div>
+					</article>
+					<article class="item-portfolio">
+						<div class="item-portfolio__img">
+							<img class="item-portfolio__image ibg" src="img/portfolio/11.webp" alt="Image" />
+						</div>
+						<div class="item-portfolio__body">
+							<h3 class="item-portfolio__title">all over color</h3>
+							<!-- <div class="item-portfolio__descroption">
+                  A professional haircut tailored to the client’s desired style,
+                  length, and shape, customized to suit the face shape and hair
+                  texture
+                </div> -->
+						</div>
+					</article>
+					<article class="item-portfolio">
+						<div class="item-portfolio__img">
+							<img class="item-portfolio__image ibg" src="img/portfolio/12.webp" alt="Image" />
+						</div>
+						<div class="item-portfolio__body">
+							<h3 class="item-portfolio__title">makeup and hairstyling</h3>
+							<!-- <div class="item-portfolio__descroption">
+                  A professional haircut tailored to the client’s desired style,
+                  length, and shape, customized to suit the face shape and hair
+                  texture
+                </div> -->
+						</div>
+					</article>
+				</div>
+			</section>
 		</main>
-
 		<footer class="footer">
 			<div class="footer__container">
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20241214113750"></script>
+	<script src="js/app.min.js?_v=20241217165605"></script>
 </body>
 
 </html>
