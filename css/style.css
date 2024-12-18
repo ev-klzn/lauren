@@ -191,6 +191,7 @@ svg {
   pointer-events: none
 }
 .round {
+  pointer-events: none;
   width: 10.75rem;
   -webkit-animation: spin 20s linear infinite;
   animation: spin 20s linear infinite;
@@ -201,6 +202,15 @@ svg {
 }
 .round__image {
   aspect-ratio: 1/1
+}
+.round--rb {
+  -webkit-animation: spinrb 20s linear infinite;
+  animation: spinrb 20s linear infinite;
+  z-index: 1;
+  top: auto;
+  left: auto;
+  bottom: 0;
+  right: 0
 }
 @-webkit-keyframes spin {
   0% {
@@ -220,6 +230,26 @@ svg {
   100% {
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%)
+  }
+}
+@-webkit-keyframes spinrb {
+  0% {
+    -webkit-transform: translate(50%,50%);
+    transform: translate(50%,50%)
+  }
+  100% {
+    -webkit-transform: translate(50%,50%);
+    transform: translate(50%,50%)
+  }
+}
+@keyframes spinrb {
+  0% {
+    -webkit-transform: translate(50%,50%);
+    transform: translate(50%,50%)
+  }
+  100% {
+    -webkit-transform: translate(50%,50%);
+    transform: translate(50%,50%)
   }
 }
 .header-block__title {
@@ -384,10 +414,18 @@ svg {
 .services {
   background-color: #fdf6fc
 }
+.services__container {
+  position: relative
+}
 .tabs__navigation {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between
+}
+.tabs__actions {
+  padding-top: 1.875rem;
+  text-align: center;
+  background: var(--c100,#faedfa)
 }
 .tabs__title {
   transition: all .3s;
@@ -402,14 +440,14 @@ svg {
   background-color: #faedfa
 }
 .tabs__body {
-  display: flex;
-  gap: 2.5rem
+  position: relative
 }
-.tabs__about {
-  flex: 0 1 50%
+.tabs__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2,1fr)
 }
 .tabs__img {
-  flex: 0 1 50%
+  position: relative
 }
 .tabs__image {
   aspect-ratio: 860/704
@@ -418,13 +456,13 @@ svg {
   background-color: #faedfa
 }
 .spollers {
-  width: auto;
-  display: grid
+  width: 100%;
+  display: grid;
+  gap: 1.5rem
 }
 .spollers__item {
   font-size: 1.5rem;
-  font-weight: 500;
-  border-bottom: 1px solid #f2cff0
+  font-weight: 500
 }
 .spollers__title {
   color: #3f1336;
@@ -435,9 +473,12 @@ svg {
   width: 100%;
   cursor: default;
   text-align: left;
-  padding: .625rem 0;
+  padding-bottom: 1rem;
   position: relative;
   list-style: none
+}
+.spollers__title h3 {
+  padding-bottom: 1rem
 }
 .spollers__title::-webkit-details-marker,
 .spollers__title::marker {
@@ -470,6 +511,36 @@ svg {
   height: 24px;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg)
+}
+.spollers__text p {
+  font-family: "Open Sans"
+}
+.spollers__services li {
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #f2cff0
+}
+.spollers__services li:not(:last-child) {
+  margin-bottom: 1.25rem
+}
+.spollers__services li div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  color: #3f1336;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1.25rem
+}
+.spollers__services li div p {
+  font-family: "Open Sans";
+  color: #3f1336;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  display: grid;
+  gap: 1.25rem
 }
 .spollers__item {
   opacity: 0;
@@ -541,7 +612,8 @@ svg {
   margin-bottom: .625rem
 }
 .item-benefits__description {
-  font-size: 1rem
+  font-size: 1rem;
+  font-family: "Open Sans"
 }
 .portfolio__list {
   transition: all .5s;
@@ -696,23 +768,17 @@ svg {
   .tabs__about {
     padding: 2.5rem
   }
-  .spollers {
-    padding-top: 3.75rem
-  }
-  .spollers {
-    padding-bottom: 3.75rem
-  }
-  .spollers {
-    gap: 2.5rem
-  }
-  .spollers {
-    margin-left: 2.5rem
-  }
-  .spollers__item {
-    padding-bottom: 1.875rem
+  .tabs__text {
+    padding: 2.5rem
   }
   .spollers__title {
     font-size: 1.25rem
+  }
+  .spollers__body {
+    margin-left: 2.5rem
+  }
+  .spollers__body ul {
+    padding-top: 2.8125rem
   }
   .item-benefits__body {
     padding-left: 1.875rem
@@ -815,23 +881,17 @@ svg {
   .tabs__about {
     padding: .9375rem
   }
-  .spollers {
-    padding-top: 2.5rem
-  }
-  .spollers {
-    padding-bottom: 2.5rem
-  }
-  .spollers {
-    gap: 1.875rem
-  }
-  .spollers {
-    margin-left: .0000000625rem
-  }
-  .spollers__item {
-    padding-bottom: .9375rem
+  .tabs__text {
+    padding: .9375rem
   }
   .spollers__title {
     font-size: 1.25rem
+  }
+  .spollers__body {
+    margin-left: .0000000625rem
+  }
+  .spollers__body ul {
+    padding-top: 1.875rem
   }
   .item-benefits__body {
     padding-left: .9375rem
@@ -1103,23 +1163,17 @@ svg {
   .tabs__about {
     padding: clamp(.9375rem ,.4846014493rem + 2.2644927536vw ,2.5rem)
   }
-  .spollers {
-    padding-top: clamp(2.5rem ,2.1376811594rem + 1.8115942029vw ,3.75rem)
-  }
-  .spollers {
-    padding-bottom: clamp(2.5rem ,2.1376811594rem + 1.8115942029vw ,3.75rem)
-  }
-  .spollers {
-    gap: clamp(1.875rem ,1.6938405797rem + .9057971014vw ,2.5rem)
-  }
-  .spollers {
-    margin-left: clamp(.0000000625rem ,-.7246376005rem + 3.6231883152vw ,2.5rem)
-  }
-  .spollers__item {
-    padding-bottom: clamp(.9375rem ,.6657608696rem + 1.3586956522vw ,1.875rem)
+  .tabs__text {
+    padding: clamp(.9375rem ,.4846014493rem + 2.2644927536vw ,2.5rem)
   }
   .spollers__title {
     font-size: clamp(1.25rem ,1.25rem + 0 ,1.25rem)
+  }
+  .spollers__body {
+    margin-left: clamp(.0000000625rem ,-.7246376005rem + 3.6231883152vw ,2.5rem)
+  }
+  .spollers__body ul {
+    padding-top: clamp(1.875rem ,1.6032608696rem + 1.3586956522vw ,2.8125rem)
   }
   .item-benefits__body {
     padding-left: clamp(.9375rem ,.6657608696rem + 1.3586956522vw ,1.875rem)

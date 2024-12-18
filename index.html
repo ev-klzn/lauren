@@ -33,7 +33,7 @@
       visibility: visible;
     }
   </style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241217165605">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241218161547">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 </head>
 
@@ -50,7 +50,7 @@
 							<li class="menu__item">
 								<a data-goto-header data-goto=".services" class="menu__link" href="#">Services</a>
 							</li>
-							<li data-goto-header data-goto=".feedback" class="menu__item">
+							<li data-goto-header data-goto=".portfolio" class="menu__item">
 								<a class="menu__link" href="#">Portfolio</a>
 							</li>
 							<li data-goto-header data-goto=".contact" class="menu__item">
@@ -214,7 +214,7 @@
 						</div>
 					</div>
 				</div>
-				<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241217165605"></script>
+				<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241218161547"></script>
 				<script>
 					var swiper = new Swiper(".mySwiper", {
 						loop: true,
@@ -547,17 +547,17 @@
 						</div>
 					</div>
 				</div>
-				<!-- <script>
-            const block1 = document.getElementById("hero__img");
-            const block2 = document.getElementById("ticker");
-            const resizeObserver = new ResizeObserver((entries) => {
-              for (let entry of entries) {
-                const height = entry.contentRect.height;
-                block2.style.marginTop = `-${height}px`;
-              }
-            });
-            resizeObserver.observe(block1);
-          </script> -->
+				<script>
+					const block1 = document.getElementById("hero__img");
+					const block2 = document.getElementById("ticker");
+					const resizeObserver = new ResizeObserver((entries) => {
+						for (let entry of entries) {
+							const height = entry.contentRect.height;
+							block2.style.marginTop = `-${height}px`;
+						}
+					});
+					resizeObserver.observe(block1);
+				</script>
 			</div>
 			<section class="page__services services">
 				<div class="services__container">
@@ -575,82 +575,189 @@
 							</p>
 						</div>
 					</div>
-					<!-- <div class="services__body">
-              <div data-tabs class="tabs">
-                <nav data-tabs-titles class="tabs__navigation">
-                  <button type="button" class="tabs__title _tab-active">
-                    Hair Services
-                  </button>
-                  <button type="button" class="tabs__title">Make-up</button>
-                  <button type="button" class="tabs__title">Nail Care</button>
-                  <button type="button" class="tabs__title">Waxing</button>
-                  <button type="button" class="tabs__title">
-                    Eyelash & Eyebrows
-                  </button>
-                </nav>
-                <div data-tabs-body class="tabs__content">
-                  <div class="tabs__body">
-                    <div class="tabs__about">
-                      <div class="tabs__text text">
-                        <p>
-                          Hair services encompass a wide range of treatments,
-                          from cuts and color to styling and treatments, all
-                          designed to enhance the health, appearance, and
-                          versatility of hair while helping individuals express
-                          their unique style.
-                        </p>
-                      </div>
-                      <div data-spollers class="spollers">
-                        <details
-                          data-watch
-                          data-watch-once
-                          class="spollers__item">
-                          <summary class="spollers__title">
-                            Cuts and Styles
-                          </summary>
-                          <div class="spollers__body">
-                            <div class="spollers__text text">
-                              <p>
-                                відповідають їхнім потребам та очікуванням. Наша
-                                мета - ефективно реалізовувати високоякісні
-                                проєкти, гарантуючи, що кожен крок процесу буде
-                                виконано з ретельністю та увагою до деталей.
-                              </p>
-                              <ul class="spollers__services">
-                                <li>
-                                  <div>
-                                    <h3>Woman Haircut</h3>
-                                    <div>$75+</div>
-                                  </div>
-                                  <div>
-                                    <p>
-                                      A professional haircut tailored to the
-                                      client’s desired style, length, and shape,
-                                      customized to suit the face shape and hair
-                                      texture.
-                                    </p>
-                                  </div>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </details>
-                      </div>
-                    </div>
-                    <div class="tabs__img">
-                      <img
-                        class="tabs__image ibg"
-                        src="img/services/1.webp"
-                        alt="Image" />
-                    </div>
-                  </div>
-                  <div class="tabs__body">2</div>
-                  <div class="tabs__body">3</div>
-                  <div class="tabs__body">4</div>
-                  <div class="tabs__body">5</div>
-                </div>
-              </div>
-            </div> -->
+					<div class="services__body">
+						<div data-tabs class="tabs">
+							<nav data-tabs-titles class="tabs__navigation">
+								<button type="button" class="tabs__title _tab-active">
+									Hair Services
+								</button>
+								<button type="button" class="tabs__title">Make-up</button>
+								<button type="button" class="tabs__title">Nail Care</button>
+								<button type="button" class="tabs__title">Waxing</button>
+								<button type="button" class="tabs__title">
+									Eyelash & Eyebrows
+								</button>
+							</nav>
+							<div data-tabs-body class="tabs__content">
+								<div class="tabs__body">
+									<div class="tabs__text text">
+										<p>
+											Hair services encompass a wide range of treatments, from
+											cuts and color to styling and treatments, all designed
+											to enhance the health, appearance, and versatility of
+											hair while helping individuals express their unique
+											style.
+										</p>
+									</div>
+									<div class="tabs__wrapper">
+										<div class="tabs__about">
+											<div data-spollers data-one-spoller class="spollers">
+												<details data-watch data-watch-once class="spollers__item">
+													<summary class="spollers__title">
+														<h3>Cuts and Styles</h3>
+														<div class="spollers__text text">
+															<p>
+																Hair cuts and styles transform your look with
+																personalized cuts and techniques that suit
+																your face shape, hair texture, and style
+																preferences.
+															</p>
+														</div>
+													</summary>
+													<div class="spollers__body">
+														<ul class="spollers__services">
+															<li>
+																<div>
+																	<h3>Woman Haircut</h3>
+																	<div>$75+</div>
+																</div>
+																<div>
+																	<p>
+																		A professional haircut tailored to the
+																		client’s desired style, length, and shape,
+																		customized to suit the face shape and hair
+																		texture.
+																	</p>
+																</div>
+															</li>
+															<li>
+																<div>
+																	<h3>Woman Haircut</h3>
+																	<div>$75+</div>
+																</div>
+																<div>
+																	<p>
+																		A professional haircut tailored to the
+																		client’s desired style, length, and shape,
+																		customized to suit the face shape and hair
+																		texture.
+																	</p>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</details>
+												<details data-watch data-watch-once class="spollers__item">
+													<summary class="spollers__title">
+														<h3>Cuts and Styles</h3>
+														<div class="spollers__text text">
+															<p>
+																Hair cuts and styles transform your look with
+																personalized cuts and techniques that suit
+																your face shape, hair texture, and style
+																preferences.
+															</p>
+														</div>
+													</summary>
+													<div class="spollers__body">
+														<ul class="spollers__services">
+															<li>
+																<div>
+																	<h3>Woman Haircut</h3>
+																	<div>$75+</div>
+																</div>
+																<div>
+																	<p>
+																		A professional haircut tailored to the
+																		client’s desired style, length, and shape,
+																		customized to suit the face shape and hair
+																		texture.
+																	</p>
+																</div>
+															</li>
+															<li>
+																<div>
+																	<h3>Woman Haircut</h3>
+																	<div>$75+</div>
+																</div>
+																<div>
+																	<p>
+																		A professional haircut tailored to the
+																		client’s desired style, length, and shape,
+																		customized to suit the face shape and hair
+																		texture.
+																	</p>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</details>
+												<details data-watch data-watch-once class="spollers__item">
+													<summary class="spollers__title">
+														<h3>Cuts and Styles</h3>
+														<div class="spollers__text text">
+															<p>
+																Hair cuts and styles transform your look with
+																personalized cuts and techniques that suit
+																your face shape, hair texture, and style
+																preferences.
+															</p>
+														</div>
+													</summary>
+													<div class="spollers__body">
+														<ul class="spollers__services">
+															<li>
+																<div>
+																	<h3>Woman Haircut</h3>
+																	<div>$75+</div>
+																</div>
+																<div>
+																	<p>
+																		A professional haircut tailored to the
+																		client’s desired style, length, and shape,
+																		customized to suit the face shape and hair
+																		texture.
+																	</p>
+																</div>
+															</li>
+															<li>
+																<div>
+																	<h3>Woman Haircut</h3>
+																	<div>$75+</div>
+																</div>
+																<div>
+																	<p>
+																		A professional haircut tailored to the
+																		client’s desired style, length, and shape,
+																		customized to suit the face shape and hair
+																		texture.
+																	</p>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</details>
+											</div>
+											<div class="tabs__actions">
+												<a class="button" href="#">Book appointment</a>
+											</div>
+										</div>
+
+										<div class="tabs__img">
+											<img class="tabs__image ibg" src="img/services/1.webp" alt="Image" />
+										</div>
+										<div class="round round--rb">
+											<img class="decor__image ibg" src="img/round.svg" alt="Image" />
+										</div>
+									</div>
+								</div>
+								<div class="tabs__body">2</div>
+								<div class="tabs__body">3</div>
+								<div class="tabs__body">4</div>
+								<div class="tabs__body">5</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 			<section class="page__benefits benefits">
@@ -905,7 +1012,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20241217165605"></script>
+	<script src="js/app.min.js?_v=20241218161547"></script>
 </body>
 
 </html>
