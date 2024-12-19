@@ -33,7 +33,7 @@
       visibility: visible;
     }
   </style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241218161547">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241219140117">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 </head>
 
@@ -214,7 +214,7 @@
 						</div>
 					</div>
 				</div>
-				<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241218161547"></script>
+				<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241219140117"></script>
 				<script>
 					var swiper = new Swiper(".mySwiper", {
 						loop: true,
@@ -578,10 +578,12 @@
 					<div class="services__body">
 						<div data-tabs class="tabs">
 							<nav data-tabs-titles class="tabs__navigation">
-								<button type="button" class="tabs__title _tab-active">
+								<button data-img="img/services/hair/cuts_and_styles/1.webp" type="button" class="tabs__title _tab-active change-image">
 									Hair Services
 								</button>
-								<button type="button" class="tabs__title">Make-up</button>
+								<button data-img="img/services/makeup/1.webp" type="button" class="tabs__title change-image">
+									Make-up
+								</button>
 								<button type="button" class="tabs__title">Nail Care</button>
 								<button type="button" class="tabs__title">Waxing</button>
 								<button type="button" class="tabs__title">
@@ -603,9 +605,9 @@
 										<div class="tabs__about">
 											<div data-spollers data-one-spoller class="spollers">
 												<details data-watch data-watch-once class="spollers__item">
-													<summary class="spollers__title">
+													<summary data-img="img/services/hair/cuts_and_styles/1.webp" class="spollers__title change-image">
 														<h3>Cuts and Styles</h3>
-														<div class="spollers__text text">
+														<div data-img="img/services/hair/cuts_and_styles/1.webp" class="spollers__text text change-image">
 															<p>
 																Hair cuts and styles transform your look with
 																personalized cuts and techniques that suit
@@ -616,31 +618,96 @@
 													</summary>
 													<div class="spollers__body">
 														<ul class="spollers__services">
-															<li>
+															<li data-img="img/services/hair/cuts_and_styles/1.webp" class="change-image">
 																<div>
 																	<h3>Woman Haircut</h3>
-																	<div>$75+</div>
+																	<div>$68+</div>
 																</div>
 																<div>
 																	<p>
 																		A professional haircut tailored to the
 																		client’s desired style, length, and shape,
 																		customized to suit the face shape and hair
-																		texture.
+																		texture
 																	</p>
 																</div>
 															</li>
-															<li>
+															<li data-img="img/services/hair/cuts_and_styles/2.webp" class="change-image">
 																<div>
-																	<h3>Woman Haircut</h3>
-																	<div>$75+</div>
+																	<h3>Men's Haircut</h3>
+																	<div>$45+</div>
 																</div>
 																<div>
 																	<p>
-																		A professional haircut tailored to the
-																		client’s desired style, length, and shape,
-																		customized to suit the face shape and hair
-																		texture.
+																		A haircut designed for men, including
+																		fades, trims, and classic styles, suited
+																		to the client’s preferences and hair type
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/hair/cuts_and_styles/3.webp" class="change-image">
+																<div>
+																	<h3>Child's Haircut</h3>
+																	<div>$35+</div>
+																</div>
+																<div>
+																	<p>
+																		A gentle and fun haircut for children,
+																		ensuring comfort and a style that is easy
+																		to maintain
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/hair/cuts_and_styles/4.webp" class="change-image">
+																<div>
+																	<h3>Woman Shampoo and Blow-dry</h3>
+																	<div>$45+</div>
+																</div>
+																<div>
+																	<p>
+																		A wash and condition treatment followed by
+																		a blow-dry adds volume, shine, and a
+																		polished look to the hair
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/hair/cuts_and_styles/5.webp" class="change-image">
+																<div>
+																	<h3>Braid</h3>
+																	<div>$25+</div>
+																</div>
+																<div>
+																	<p>
+																		A styling service where hair is
+																		intricately woven into a braid, offering
+																		various styles such as French, Dutch, or
+																		simple three-strand braids
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/hair/cuts_and_styles/6.webp" class="change-image">
+																<div>
+																	<h3>Bouncy Blowout</h3>
+																	<div>$58+</div>
+																</div>
+																<div>
+																	<p>
+																		A blow-dry service that creates
+																		voluminous, bouncy, and smooth hair,
+																		perfect for a polished, full look
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/hair/cuts_and_styles/7.webp" class="change-image">
+																<div>
+																	<h3>Bang Trim</h3>
+																	<div>$15+</div>
+																</div>
+																<div>
+																	<p>
+																		A quick trim of the bangs or fringe to
+																		maintain their shape and length, keeping
+																		them fresh and styled
 																	</p>
 																</div>
 															</li>
@@ -648,44 +715,184 @@
 													</div>
 												</details>
 												<details data-watch data-watch-once class="spollers__item">
-													<summary class="spollers__title">
-														<h3>Cuts and Styles</h3>
-														<div class="spollers__text text">
+													<summary data-img="img/services/hair/hair_color/1.webp" class="spollers__title change-image">
+														<h3>Hair Color</h3>
+														<div data-img="img/services/hair/hair_color/1.webp" class="spollers__text text change-image">
 															<p>
-																Hair cuts and styles transform your look with
-																personalized cuts and techniques that suit
-																your face shape, hair texture, and style
-																preferences.
+																Hair color enhances your look by adding
+																vibrancy, dimension, and creativity to your
+																natural shade
 															</p>
 														</div>
 													</summary>
 													<div class="spollers__body">
 														<ul class="spollers__services">
-															<li>
+															<li data-img="img/services/hair/hair_color/1.webp" class="change-image">
 																<div>
-																	<h3>Woman Haircut</h3>
-																	<div>$75+</div>
+																	<h3>Root Touch Up</h3>
+																	<div>$89+</div>
 																</div>
 																<div>
 																	<p>
-																		A professional haircut tailored to the
-																		client’s desired style, length, and shape,
-																		customized to suit the face shape and hair
-																		texture.
+																		A service to cover gray hair or maintain
+																		the color at the roots, blending
+																		seamlessly with the rest of the hair for a
+																		fresh, uniform look
 																	</p>
 																</div>
 															</li>
-															<li>
+															<li data-img="img/services/hair/hair_color/2.webp" class="change-image">
 																<div>
-																	<h3>Woman Haircut</h3>
-																	<div>$75+</div>
+																	<h3>All over Color</h3>
+																	<div>$108+</div>
 																</div>
 																<div>
 																	<p>
-																		A professional haircut tailored to the
-																		client’s desired style, length, and shape,
-																		customized to suit the face shape and hair
-																		texture.
+																		A full color application that covers the
+																		entire head, providing a uniform shade
+																		from root to tip for a dramatic or natural
+																		color change
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/hair/hair_color/3.webp" class="change-image">
+																<div>
+																	<h3>Partial Highlights</h3>
+																	<div>$125+</div>
+																</div>
+																<div>
+																	<p>
+																		Highlights applied to select sections of
+																		the hair, usually focusing on the top and
+																		sides, for a sun-kissed,
+																		dimension-enhancing look
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/hair/hair_color/4.webp" class="change-image">
+																<div>
+																	<h3>Full Highlights</h3>
+																	<div>$160+</div>
+																</div>
+																<div>
+																	<p>
+																		Highlights added throughout the entire
+																		head of hair, from roots to tips, creating
+																		a lighter, more dimensional appearance
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/hair/hair_color/5.webp" class="change-image">
+																<div>
+																	<h3>Multi-Dimensional Highlights</h3>
+																	<div>$168+</div>
+																</div>
+																<div>
+																	<p>
+																		Highlights in various shades and tones,
+																		layered for a more intricate and natural
+																		look, adding depth and dimension to the
+																		hair
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/hair/hair_color/6.webp" class="change-image">
+																<div>
+																	<h3>Babylights</h3>
+																	<div>$200+</div>
+																</div>
+																<div>
+																	<p>
+																		Fine, delicate highlights that mimic the
+																		soft, natural highlights seen in
+																		children’s hair, often used for a subtle,
+																		sun-kissed effect
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/hair/hair_color/7.webp" class="change-image">
+																<div>
+																	<h3>Partial Babylights</h3>
+																	<div>$168+</div>
+																</div>
+																<div>
+																	<p>
+																		Similar to babylights, but applied to only
+																		a portion of the hair for a lighter, more
+																		natural effect in specific areas
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/hair/hair_color/8.webp" class="change-image">
+																<div>
+																	<h3>Balayage</h3>
+																	<div></div>
+																</div>
+																<div>
+																	<p>
+																		A freehand coloring technique that creates
+																		a sun-kissed, natural look with soft,
+																		blended highlights, often with darker
+																		roots and lighter ends. A consultation is
+																		needed for customized results. -
+																		consultation required
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/hair/hair_color/9.webp" class="change-image">
+																<div>
+																	<h3>Vivid</h3>
+																	<div></div>
+																</div>
+																<div>
+																	<p>
+																		Bold, vibrant hair color that may include
+																		shades like pink, purple, or blue. A
+																		consultation is required to discuss color
+																		selection and maintenance
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/hair/hair_color/10.webp" class="change-image">
+																<div>
+																	<h3>Color Correction</h3>
+																	<div></div>
+																</div>
+																<div>
+																	<p>
+																		A corrective service to fix previous hair
+																		color mistakes, such as uneven or
+																		undesirable tones. A consultation is
+																		required to assess the best approach.
+																		-consultation required
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/hair/hair_color/11.webp" class="change-image">
+																<div>
+																	<h3>Glazing Toner</h3>
+																	<div>$88+</div>
+																</div>
+																<div>
+																	<p>
+																		A treatment applied after coloring to
+																		enhance or adjust the tone of the hair,
+																		adding shine, richness, or neutralizing
+																		unwanted hues (like brassiness)
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/hair/hair_color/12.webp" class="change-image">
+																<div>
+																	<h3>Money Pieces</h3>
+																	<div>$68+</div>
+																</div>
+																<div>
+																	<p>
+																		Bright, face-framing highlights placed
+																		around the front of the hair, are designed
+																		to accentuate the facial features and
+																		create a striking, youthful look.
 																	</p>
 																</div>
 															</li>
@@ -693,44 +900,114 @@
 													</div>
 												</details>
 												<details data-watch data-watch-once class="spollers__item">
-													<summary class="spollers__title">
-														<h3>Cuts and Styles</h3>
-														<div class="spollers__text text">
+													<summary data-img="img/services/hair/treatments/1.webp" class="spollers__title change-image">
+														<h3>Treatments</h3>
+														<div data-img="img/services/hair/treatments/1.webp" class="spollers__text text change-image">
 															<p>
-																Hair cuts and styles transform your look with
-																personalized cuts and techniques that suit
-																your face shape, hair texture, and style
-																preferences.
+																Hair treatments nourish and repair hair,
+																promoting softness, shine, and overall health
 															</p>
 														</div>
 													</summary>
 													<div class="spollers__body">
 														<ul class="spollers__services">
-															<li>
+															<li data-img="img/services/hair/treatments/1.webp" class="change-image">
 																<div>
-																	<h3>Woman Haircut</h3>
-																	<div>$75+</div>
+																	<h3>10 Min Scalp Massage</h3>
+																	<div>$15+</div>
 																</div>
 																<div>
 																	<p>
-																		A professional haircut tailored to the
-																		client’s desired style, length, and shape,
-																		customized to suit the face shape and hair
-																		texture.
+																		10 Min Scalp Massage. A relaxing,
+																		10-minute massage of the scalp to
+																		stimulate blood circulation, promote
+																		relaxation, and relieve tension
 																	</p>
 																</div>
 															</li>
-															<li>
+															<li data-img="img/services/hair/treatments/2.webp" class="change-image">
 																<div>
-																	<h3>Woman Haircut</h3>
-																	<div>$75+</div>
+																	<h3>Emergency Hair Treatment</h3>
+																	<div>$50+</div>
 																</div>
 																<div>
 																	<p>
-																		A professional haircut tailored to the
-																		client’s desired style, length, and shape,
-																		customized to suit the face shape and hair
-																		texture.
+																		A quick, intensive treatment designed to
+																		repair severely damaged or stressed hair,
+																		restoring moisture, strength, and shine
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/hair/treatments/3.webp" class="change-image">
+																<div>
+																	<h3>Deep Conditioning Treatment</h3>
+																	<div>$40+</div>
+																</div>
+																<div>
+																	<p>
+																		A nourishing treatment that penetrates
+																		deep into the hair to provide hydration,
+																		smoothness, and repair, often used for dry
+																		or damaged hair
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/hair/treatments/4.webp" class="change-image">
+																<div>
+																	<h3>Hair Growth Treatment</h3>
+																	<div>$59+</div>
+																</div>
+																<div>
+																	<p>
+																		A treatment designed to promote healthier
+																		hair growth by nourishing the scalp,
+																		strengthening hair follicles, and
+																		improving circulation
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/hair/treatments/5.webp" class="change-image">
+																<div>
+																	<h3>Keratin Smoothing Treatment</h3>
+																	<div>$270+</div>
+																</div>
+																<div>
+																	<p>
+																		A professional treatment that infuses
+																		keratin into the hair, smoothing frizz,
+																		reducing curl, and leaving hair sleek,
+																		shiny, and manageable for weeks
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/hair/treatments/6.webp" class="change-image">
+																<div>
+																	<h3>
+																		Keratin Conditioning Treatment Add-on
+																	</h3>
+																	<div>$59+</div>
+																</div>
+																<div>
+																	<p>
+																		A supplemental keratin treatment applied
+																		during the styling process, providing
+																		extra smoothness, shine, and nourishment
+																		to the hair
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/hair/treatments/7.webp" class="change-image">
+																<div>
+																	<h3>Brazilian Blowout</h3>
+																	<div>$285+</div>
+																</div>
+																<div>
+																	<p>
+																		A long-lasting hair smoothing treatment
+																		that eliminates frizz, adds shine, and
+																		reduces styling time by using a
+																		keratin-based formula to smooth the hair.
+																		It typically lasts for months
 																	</p>
 																</div>
 															</li>
@@ -742,16 +1019,101 @@
 												<a class="button" href="#">Book appointment</a>
 											</div>
 										</div>
-
 										<div class="tabs__img">
-											<img class="tabs__image ibg" src="img/services/1.webp" alt="Image" />
+											<img id="photo" class="tabs__image ibg" src="img/services/hair/cuts_and_styles/1.webp" alt="Image" />
 										</div>
 										<div class="round round--rb">
 											<img class="decor__image ibg" src="img/round.svg" alt="Image" />
 										</div>
 									</div>
 								</div>
-								<div class="tabs__body">2</div>
+								<div class="tabs__body">
+									<div class="tabs__text text">
+										<p>
+											Makeup is an art form that enhances natural features,
+											boosts confidence, and allows individuals to express
+											their creativity and personality through color, texture,
+											and technique
+										</p>
+									</div>
+									<div class="tabs__wrapper">
+										<div class="tabs__about">
+											<div data-spollers="767.98,max" class="spollers">
+												<details data-watch data-watch-once class="spollers__item">
+													<summary data-img="img/services/makeup/1.webp" class="spollers__title change-image">
+														<h3>Makeup</h3>
+														<div data-img="img/services/makeup/1.webp" class="spollers__text text change-image">
+															<p>
+																Look fresh and natural with our Makeup service
+															</p>
+														</div>
+													</summary>
+													<div class="spollers__body">
+														<ul class="spollers__services">
+															<li data-img="img/services/makeup/1.webp" class="change-image">
+																<div>
+																	<h3>Daily Makeup</h3>
+																	<div>$60+</div>
+																</div>
+																<div>
+																	<p>
+																		Look fresh and natural every day with our
+																		Daily Makeup service
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/makeup/2.webp" class="change-image">
+																<div>
+																	<h3>Bridal Makeup</h3>
+																	<div>$200+</div>
+																</div>
+																<div>
+																	<p>
+																		Feel flawless on your special day with our
+																		expert Bridal Makeup
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/makeup/3.webp" class="change-image">
+																<div>
+																	<h3>Express Glow-On Makeup</h3>
+																	<div>$100+</div>
+																</div>
+																<div>
+																	<p>
+																		Get a radiant glow in no time with our
+																		Express Glow-On Makeup
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/makeup/4.webp" class="change-image">
+																<div>
+																	<h3>Occasional Makeup</h3>
+																	<div>$75+</div>
+																</div>
+																<div>
+																	<p>
+																		Perfect your look for any event with our
+																		Occasional Makeup service
+																	</p>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</details>
+											</div>
+											<div class="tabs__actions">
+												<a class="button" href="#">Book appointment</a>
+											</div>
+										</div>
+										<div class="tabs__img">
+											<img id="photo2" class="tabs__image ibg" src="img/services/makeup/1.webp" alt="Image" />
+										</div>
+										<div class="round round--rb">
+											<img class="decor__image ibg" src="img/round.svg" alt="Image" />
+										</div>
+									</div>
+								</div>
 								<div class="tabs__body">3</div>
 								<div class="tabs__body">4</div>
 								<div class="tabs__body">5</div>
@@ -759,6 +1121,36 @@
 						</div>
 					</div>
 				</div>
+				<script>
+					const headings = document.querySelectorAll(".change-image");
+					const photo = document.getElementById("photo");
+
+					headings.forEach((heading) => {
+						heading.addEventListener("click", () => {
+							const newImage = heading.getAttribute("data-img");
+							photo.style.opacity = 0;
+							setTimeout(() => {
+								photo.src = newImage;
+								photo.style.opacity = 1;
+							}, 500);
+						});
+					});
+				</script>
+				<script>
+					const headings2 = document.querySelectorAll(".change-image");
+					const photo2 = document.getElementById("photo2");
+
+					headings2.forEach((heading) => {
+						heading.addEventListener("click", () => {
+							const newImage = heading.getAttribute("data-img");
+							photo2.style.opacity = 0;
+							setTimeout(() => {
+								photo2.src = newImage;
+								photo2.style.opacity = 1;
+							}, 500);
+						});
+					});
+				</script>
 			</section>
 			<section class="page__benefits benefits">
 				<div class="benefits__container">
@@ -1012,7 +1404,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20241218161547"></script>
+	<script src="js/app.min.js?_v=20241219140117"></script>
 </body>
 
 </html>
