@@ -112,14 +112,17 @@ body {
   grid-column: 3/4
 }
 .button {
+  text-transform: capitalize;
   color: #fff;
   background: #cd68c0;
   font-size: 1.5rem;
   display: inline-flex;
-  padding: 0 0;
   padding-top: 1rem;
   padding-bottom: 1.0625rem;
   transition: all .3s
+}
+.button:hover {
+  background: #b049a1!important
 }
 .button--fw {
   width: 100%
@@ -259,6 +262,9 @@ svg {
   line-height: normal;
   text-transform: uppercase
 }
+.change-image {
+  transition: opacity .5s ease-in-out 1.5s
+}
 .header {
   position: fixed;
   width: 100%;
@@ -296,7 +302,8 @@ svg {
 }
 .header__logo-img {
   flex: 0 0 10rem;
-  aspect-ratio: 160/50
+  aspect-ratio: 160/50;
+  pointer-events: none
 }
 .menu__body {
   gap: 1.25rem;
@@ -318,6 +325,58 @@ svg {
 }
 .icon-menu {
   display: none
+}
+.footer {
+  background: #faedfa;
+  padding-bottom: 2.8125rem;
+  border-top: 1px solid #f2cff0
+}
+.footer__container {
+  display: grid;
+  gap: 1.875rem;
+  justify-content: space-between;
+  grid-template-columns: repeat(2,auto)
+}
+.footer__aside {
+  max-width: 28.625rem
+}
+.footer__logo {
+  width: 10rem;
+  margin-bottom: 1.25rem
+}
+.footer__logo-img {
+  pointer-events: none;
+  aspect-ratio: 160/50
+}
+.footer__description {
+  color: #3f1336;
+  font-family: "Open Sans";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal
+}
+.footer__body {
+  max-width: 50.625rem
+}
+.footer__subscribe {
+  color: #3f1336;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1rem
+}
+.footer__copy {
+  color: #3f1336;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal
+}
+.footer__copy a {
+  transition: all .3s
 }
 .page__ticker {
   padding-top: 2.1875rem;
@@ -350,10 +409,6 @@ svg {
   position: relative;
   z-index: 3;
   max-width: 36.625rem
-}
-.hero__actions {
-  position: relative;
-  z-index: 3
 }
 .hero__button {
   text-transform: capitalize
@@ -433,8 +488,8 @@ svg {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-top: .625rem;
-  padding-bottom: .625rem
+  padding-top: .9375rem;
+  padding-bottom: .9375rem
 }
 .tabs__title._tab-active {
   background-color: #faedfa
@@ -466,23 +521,25 @@ svg {
 }
 .spollers__item {
   font-size: 1.5rem;
-  font-weight: 500
+  font-weight: 500;
+  text-transform: capitalize
 }
 .spollers__title {
   color: #3f1336;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   width: 100%;
   cursor: default;
   text-align: left;
-  padding-bottom: 1rem;
+  display: grid;
+  gap: 1rem;
   position: relative;
   list-style: none
 }
 .spollers__title h3 {
-  padding-bottom: 1rem
+  transition: all .3s
 }
 .spollers__title::-webkit-details-marker,
 .spollers__title::marker {
@@ -670,6 +727,48 @@ svg {
   font-weight: 300;
   line-height: normal
 }
+.contact {
+  background-color: #faedfa
+}
+.contact__container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3,1fr)
+}
+.contact__item {
+  display: grid;
+  justify-items: center
+}
+.contact__img {
+  width: 6rem;
+  margin-bottom: .625rem
+}
+.contact__image {
+  aspect-ratio: 96/96;
+  pointer-events: none
+}
+.contact__about {
+  color: #3f1336;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1.875rem
+}
+.contact__body {
+  color: #3f1336;
+  font-family: "Open Sans";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  display: grid;
+  gap: .625rem;
+  justify-items: center
+}
+.contact__body a {
+  transition: all .3s
+}
 .swiper {
   overflow: hidden
 }
@@ -730,6 +829,12 @@ svg {
   .header__logo {
     gap: 1.5rem
   }
+  .footer {
+    padding-top: 6.25rem
+  }
+  .footer__form {
+    margin-bottom: 2.5rem
+  }
   .page__services {
     margin-top: 5.625rem
   }
@@ -754,6 +859,12 @@ svg {
   .page__portfolio {
     padding-bottom: 5.625rem
   }
+  .page__contact {
+    padding-top: 5.625rem
+  }
+  .page__contact {
+    padding-bottom: 5.9375rem
+  }
   .hero {
     padding-top: 16.875rem
   }
@@ -777,9 +888,6 @@ svg {
   }
   .tabs__text {
     padding: 2.5rem
-  }
-  .spollers__title {
-    font-size: 1.25rem
   }
   .spollers__body {
     margin-left: 2.5rem
@@ -843,6 +951,12 @@ svg {
   .header__logo {
     gap: .9375rem
   }
+  .footer {
+    padding-top: 3.125rem
+  }
+  .footer__form {
+    margin-bottom: 1.875rem
+  }
   .page__services {
     margin-top: 2.8125rem
   }
@@ -867,6 +981,12 @@ svg {
   .page__portfolio {
     padding-bottom: 2.8125rem
   }
+  .page__contact {
+    padding-top: 2.8125rem
+  }
+  .page__contact {
+    padding-bottom: 3.125rem
+  }
   .hero {
     padding-top: 7.5rem
   }
@@ -890,9 +1010,6 @@ svg {
   }
   .tabs__text {
     padding: .9375rem
-  }
-  .spollers__title {
-    font-size: 1.25rem
   }
   .spollers__body {
     margin-left: .0000000625rem
@@ -1050,6 +1167,12 @@ svg {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg)
   }
+  .footer__aside {
+    max-width: auto
+  }
+  .footer__body {
+    max-width: auto
+  }
   .hero__text {
     max-width: 100%
   }
@@ -1138,6 +1261,12 @@ svg {
   .header__logo {
     gap: clamp(.9375rem ,.7744565217rem + .8152173913vw ,1.5rem)
   }
+  .footer {
+    padding-top: clamp(3.125rem ,2.2192028986rem + 4.5289855072vw ,6.25rem)
+  }
+  .footer__form {
+    margin-bottom: clamp(1.875rem ,1.6938405797rem + .9057971014vw ,2.5rem)
+  }
   .page__services {
     margin-top: clamp(2.8125rem ,1.9972826087rem + 4.0760869565vw ,5.625rem)
   }
@@ -1162,6 +1291,12 @@ svg {
   .page__portfolio {
     padding-bottom: clamp(2.8125rem ,1.9972826087rem + 4.0760869565vw ,5.625rem)
   }
+  .page__contact {
+    padding-top: clamp(2.8125rem ,1.9972826087rem + 4.0760869565vw ,5.625rem)
+  }
+  .page__contact {
+    padding-bottom: clamp(3.125rem ,2.3097826087rem + 4.0760869565vw ,5.9375rem)
+  }
   .hero {
     padding-top: clamp(7.5rem ,4.7826086957rem + 13.5869565217vw ,16.875rem)
   }
@@ -1185,9 +1320,6 @@ svg {
   }
   .tabs__text {
     padding: clamp(.9375rem ,.4846014493rem + 2.2644927536vw ,2.5rem)
-  }
-  .spollers__title {
-    font-size: clamp(1.25rem ,1.25rem + 0 ,1.25rem)
   }
   .spollers__body {
     margin-left: clamp(.0000000625rem ,-.7246376005rem + 3.6231883152vw ,2.5rem)
@@ -1225,6 +1357,15 @@ svg {
   [class*=_link]:hover {
     color: #cd68c0
   }
+  .footer__copy a:hover {
+    color: #cd68c0
+  }
+  .tabs__title:hover {
+    color: #cd68c0
+  }
+  .spollers__title h3:hover {
+    color: #cd68c0
+  }
   .spollers__services li:hover div:nth-child(1) {
     color: #cd68c0
   }
@@ -1234,5 +1375,8 @@ svg {
   }
   .item-portfolio:hover .item-portfolio__img {
     top: -10%
+  }
+  .contact__body a:hover {
+    color: #cd68c0
   }
 }

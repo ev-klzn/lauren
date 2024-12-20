@@ -33,7 +33,7 @@
       visibility: visible;
     }
   </style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241219140117">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241220130831">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 </head>
 
@@ -53,7 +53,7 @@
 							<li data-goto-header data-goto=".portfolio" class="menu__item">
 								<a class="menu__link" href="#">Portfolio</a>
 							</li>
-							<li data-goto-header data-goto=".contact" class="menu__item">
+							<li data-goto-header data-goto=".reserve" class="menu__item">
 								<a class="menu__link" href="#">Contact</a>
 							</li>
 						</ul>
@@ -83,7 +83,7 @@
 										</p>
 									</div>
 									<div class="hero__actions">
-										<a data-popup="#popup" class="hero__button button" href="#">Book appointment
+										<a data-goto-header data-goto=".reserve" class="hero__button button" href="#">Book appointment
 										</a>
 									</div>
 									<div class="round">
@@ -105,7 +105,7 @@
 										</p>
 									</div>
 									<div class="hero__actions">
-										<a data-watch data-watch-once data-watch-threshold="0.6" data-popup="#popup" class="hero__button button" href="#">Book appointment
+										<a data-goto-header data-goto=".reserve" class="hero__button button" href="#">Book appointment
 										</a>
 									</div>
 									<div class="round">
@@ -128,7 +128,7 @@
 										</p>
 									</div>
 									<div class="hero__actions">
-										<a data-popup="#popup" class="hero__button button" href="#">Book appointment
+										<a data-goto-header data-goto=".reserve" class="hero__button button" href="#">Book appointment
 										</a>
 									</div>
 									<div class="round">
@@ -151,7 +151,7 @@
 										</p>
 									</div>
 									<div class="hero__actions">
-										<a data-popup="#popup" class="hero__button button" href="#">Book appointment
+										<a data-goto-header data-goto=".reserve" class="hero__button button" href="#">Book appointment
 										</a>
 									</div>
 									<div class="round">
@@ -174,7 +174,7 @@
 										</p>
 									</div>
 									<div class="hero__actions">
-										<a data-popup="#popup" class="hero__button button" href="#">Book appointment
+										<a data-goto-header data-goto=".reserve" class="hero__button button" href="#">Book appointment
 										</a>
 									</div>
 									<div class="round">
@@ -214,7 +214,7 @@
 						</div>
 					</div>
 				</div>
-				<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241219140117"></script>
+				<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241220130831"></script>
 				<script>
 					var swiper = new Swiper(".mySwiper", {
 						loop: true,
@@ -224,10 +224,10 @@
 						speed: 2000,
 						observer: true,
 						observeParents: true,
-						// autoplay: {
-						//   delay: 4000,
-						//   disableOnInteraction: false,
-						// },
+						autoplay: {
+							delay: 4000,
+							disableOnInteraction: false,
+						},
 						breakpoints: {
 							320: {
 								slidesPerView: 1.1,
@@ -255,10 +255,10 @@
 						observeParents: true,
 						speed: 2000,
 						effect: "fade",
-						// autoplay: {
-						//   delay: 4000,
-						//   disableOnInteraction: false,
-						// },
+						autoplay: {
+							delay: 4000,
+							disableOnInteraction: false,
+						},
 						thumbs: {
 							swiper: swiper,
 						},
@@ -584,23 +584,27 @@
 								<button data-img="img/services/makeup/1.webp" type="button" class="tabs__title change-image">
 									Make-up
 								</button>
-								<button type="button" class="tabs__title">Nail Care</button>
-								<button type="button" class="tabs__title">Waxing</button>
-								<button type="button" class="tabs__title">
+								<button data-img="img/services/nail/1.webp" type="button" class="tabs__title change-image">
+									Nail Care
+								</button>
+								<button data-img="img/services/waxing/body_waxing/5.webp" type="button" class="tabs__title change-image">
+									Waxing
+								</button>
+								<button data-img="img/services/eyelash/1.webp" type="button" class="tabs__title change-image">
 									Eyelash & Eyebrows
 								</button>
 							</nav>
 							<div data-tabs-body class="tabs__content">
 								<div class="tabs__body">
-									<div class="tabs__text text">
-										<p>
-											Hair services encompass a wide range of treatments, from
-											cuts and color to styling and treatments, all designed
-											to enhance the health, appearance, and versatility of
-											hair while helping individuals express their unique
-											style.
-										</p>
-									</div>
+									<!-- <div class="tabs__text text">
+                      <p>
+                        Hair services encompass a wide range of treatments, from
+                        cuts and color to styling and treatments, all designed
+                        to enhance the health, appearance, and versatility of
+                        hair while helping individuals express their unique
+                        style.
+                      </p>
+                    </div> -->
 									<div class="tabs__wrapper">
 										<div class="tabs__about">
 											<div data-spollers data-one-spoller class="spollers">
@@ -1016,7 +1020,7 @@
 												</details>
 											</div>
 											<div class="tabs__actions">
-												<a class="button" href="#">Book appointment</a>
+												<a data-goto-header data-goto=".reserve" class="button" href="#">Book appointment</a>
 											</div>
 										</div>
 										<div class="tabs__img">
@@ -1028,14 +1032,11 @@
 									</div>
 								</div>
 								<div class="tabs__body">
-									<div class="tabs__text text">
-										<p>
-											Makeup is an art form that enhances natural features,
-											boosts confidence, and allows individuals to express
-											their creativity and personality through color, texture,
-											and technique
-										</p>
-									</div>
+									<!-- <div class="tabs__text text">
+                      <p>
+                      
+                      </p>
+                    </div> -->
 									<div class="tabs__wrapper">
 										<div class="tabs__about">
 											<div data-spollers="767.98,max" class="spollers">
@@ -1103,7 +1104,7 @@
 												</details>
 											</div>
 											<div class="tabs__actions">
-												<a class="button" href="#">Book appointment</a>
+												<a data-goto-header data-goto=".reserve" class="button" href="#">Book appointment</a>
 											</div>
 										</div>
 										<div class="tabs__img">
@@ -1114,9 +1115,491 @@
 										</div>
 									</div>
 								</div>
-								<div class="tabs__body">3</div>
-								<div class="tabs__body">4</div>
-								<div class="tabs__body">5</div>
+								<div class="tabs__body">
+									<!-- <div class="tabs__text text">
+                      <p></p>
+                    </div> -->
+									<div class="tabs__wrapper">
+										<div class="tabs__about">
+											<div data-spollers="767.98,max" class="spollers">
+												<details data-watch data-watch-once class="spollers__item">
+													<summary data-img="img/services/nail/1.webp" class="spollers__title change-image">
+														<h3>Nail care</h3>
+														<div data-img="img/services/nail/1.webp" class="spollers__text text change-image">
+															<p>
+																A manicure is a hand and nail care treatment
+																that focuses on cleaning, shaping, and
+																enhancing the appearance of nails while
+																promoting healthy hands
+															</p>
+														</div>
+													</summary>
+													<div class="spollers__body">
+														<ul class="spollers__services">
+															<li data-img="img/services/nail/1.webp" class="change-image">
+																<div>
+																	<h3>Gel Manicure</h3>
+																	<div>$35+</div>
+																</div>
+																<div>
+																	<p>
+																		A gel manicure is a nail treatment where
+																		gel-based polish is applied and cured
+																		under a UV or LED light, resulting in a
+																		glossy, chip-resistant finish lasting up
+																		to two to three weeks. Its durability and
+																		sleek appearance make it a popular choice
+																		for those seeking long-lasting nail care
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/nail/2.webp" class="change-image">
+																<div>
+																	<h3>Gel Pedicure</h3>
+																	<div>$45+</div>
+																</div>
+																<div>
+																	<p>
+																		A gel pedicure provides long-lasting,
+																		chip-resistant polish with a glossy
+																		finish, perfect for maintaining beautiful
+																		nails for weeks
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/nail/3.webp" class="change-image">
+																<div>
+																	<h3>Express Manicures</h3>
+																	<div>$25+</div>
+																</div>
+																<div>
+																	<p>
+																		Express manicures and pedicures provide
+																		quick yet effective nail and hand/foot
+																		care for a polished look in less time
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/nail/4.webp" class="change-image">
+																<div>
+																	<h3>Express Pedicures</h3>
+																	<div>$30+</div>
+																</div>
+																<div>
+																	<p>
+																		Express manicures and pedicures provide
+																		quick yet effective nail and hand/foot
+																		care for a polished look in less time
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/nail/5.webp" class="change-image">
+																<div>
+																	<h3>French Gel Manicure</h3>
+																	<div>$50+</div>
+																</div>
+																<div>
+																	<p>
+																		A French Gel Manicure is a sophisticated
+																		nail service that combines the elegance of
+																		a classic French design with the
+																		durability and shine of gel polish,
+																		offering long-lasting, chip-resistant
+																		results
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/nail/6.webp" class="change-image">
+																<div>
+																	<h3>
+																		Collagen Gloves Manicure with LED Light
+																	</h3>
+																	<div>$75+</div>
+																</div>
+																<div>
+																	<p>
+																		Collagen Gloves Manicure with LED Light
+																		rejuvenates hands by hydrating and
+																		strengthening the skin and nails using
+																		collagen-infused gloves and LED therapy
+																	</p>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</details>
+											</div>
+											<div class="tabs__actions">
+												<a data-goto-header data-goto=".reserve" class="button" href="#">Book appointment</a>
+											</div>
+										</div>
+										<div class="tabs__img">
+											<img id="photo3" class="tabs__image ibg" src="img/services/nail/1.webp" alt="Image" />
+										</div>
+										<div class="round round--rb">
+											<img class="decor__image ibg" src="img/round.svg" alt="Image" />
+										</div>
+									</div>
+								</div>
+								<div class="tabs__body">
+									<!-- <div class="tabs__text text">
+                      <p>
+                        Hair services encompass a wide range of treatments, from
+                        cuts and color to styling and treatments, all designed
+                        to enhance the health, appearance, and versatility of
+                        hair while helping individuals express their unique
+                        style.
+                      </p>
+                    </div> -->
+									<div class="tabs__wrapper">
+										<div class="tabs__about">
+											<div data-spollers data-one-spoller class="spollers">
+												<details data-watch data-watch-once class="spollers__item">
+													<summary data-img="img/services/waxing/facial_waxing/1.webp" class="spollers__title change-image">
+														<h3>Facial waxing</h3>
+														<div data-img="img/services/waxing/facial_waxing/1.webp" class="spollers__text text change-image">
+															<p>
+																Achieve smooth, flawless skin with our
+																professional facial waxing services, designed
+																to gently remove unwanted hair and enhance
+																your natural beauty.
+															</p>
+														</div>
+													</summary>
+													<div class="spollers__body">
+														<ul class="spollers__services">
+															<li data-img="img/services/waxing/facial_waxing/1.webp" class="change-image">
+																<div>
+																	<h3>Brow</h3>
+																	<div>$22+</div>
+																</div>
+																<div>
+																	<p>
+																		Shape and define your eyebrows with our
+																		precise brow waxing
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/waxing/facial_waxing/2.webp" class="change-image">
+																<div>
+																	<h3>Lip</h3>
+																	<div>$20+</div>
+																</div>
+																<div>
+																	<p>
+																		Smooth and remove unwanted hair from your
+																		upper lip with our waxing service
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/waxing/facial_waxing/3.webp" class="change-image">
+																<div>
+																	<h3>Eye & Lip</h3>
+																	<div>$42+</div>
+																</div>
+																<div>
+																	<p>
+																		Get a complete facial wax with our eye and
+																		lip combo
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/waxing/facial_waxing/4.webp" class="change-image">
+																<div>
+																	<h3>Chin</h3>
+																	<div>$15+</div>
+																</div>
+																<div>
+																	<p>
+																		Remove chin hair easily with our quick
+																		waxing service
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/waxing/facial_waxing/5.webp" class="change-image">
+																<div>
+																	<h3>Face</h3>
+																	<div>$45+</div>
+																</div>
+																<div>
+																	<p>
+																		Experience full facial waxing for a
+																		flawless, smooth look
+																	</p>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</details>
+												<details data-watch data-watch-once class="spollers__item">
+													<summary data-img="img/services/waxing/body_waxing/1.webp" class="spollers__title change-image">
+														<h3>Body Waxing</h3>
+														<div data-img="img/services/waxing/body_waxing/1.webp" class="spollers__text text change-image">
+															<p>
+																Experience silky-smooth skin with our expert
+																body waxing services, tailored for
+																long-lasting results and ultimate comfort
+															</p>
+														</div>
+													</summary>
+													<div class="spollers__body">
+														<ul class="spollers__services">
+															<li data-img="img/services/waxing/body_waxing/1.webp" class="change-image">
+																<div>
+																	<h3>Back</h3>
+																	<div>$60+</div>
+																</div>
+																<div>
+																	<p>
+																		A back wax provides smooth, hair-free
+																		skin, ideal for a clean, polished look
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/waxing/body_waxing/2.webp" class="change-image">
+																<div>
+																	<h3>Half Arm</h3>
+																	<div>$40+</div>
+																</div>
+																<div>
+																	<p>
+																		Half-arm waxing removes unwanted hair from
+																		the elbow to the wrist, leaving soft,
+																		smooth skin
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/waxing/body_waxing/3.webp" class="change-image">
+																<div>
+																	<h3>Full Arm</h3>
+																	<div>$60+</div>
+																</div>
+																<div>
+																	<p>
+																		Full arm waxing eliminates hair from the
+																		shoulder to the wrist for a completely
+																		smooth finish
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/waxing/body_waxing/4.webp" class="change-image">
+																<div>
+																	<h3>Underarm</h3>
+																	<div>$40+</div>
+																</div>
+																<div>
+																	<p>
+																		Underarm waxing offers a long-lasting,
+																		hair-free solution for smooth and fresh
+																		underarms
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/waxing/body_waxing/5.webp" class="change-image">
+																<div>
+																	<h3>Upper Leg</h3>
+																	<div>$60+</div>
+																</div>
+																<div>
+																	<p>
+																		Upper leg waxing removes hair from the
+																		thigh area, leaving your legs silky and
+																		smooth
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/waxing/body_waxing/6.webp" class="change-image">
+																<div>
+																	<h3>Upper + Lower Leg</h3>
+																	<div>$90+</div>
+																</div>
+																<div>
+																	<p>
+																		Full leg waxing provides smooth, hair-free
+																		skin from thigh to ankle for a flawless
+																		look
+																	</p>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</details>
+												<details data-watch data-watch-once class="spollers__item">
+													<summary data-img="img/services/waxing/intimate_waxing/1.webp" class="spollers__title change-image">
+														<h3>Intimate waxing</h3>
+														<div data-img="img/services/waxing/intimate_waxing/1.webp" class="spollers__text text change-image">
+															<p>
+																Discover flawless results and gentle care with
+																our professional intimate waxing services
+															</p>
+														</div>
+													</summary>
+													<div class="spollers__body">
+														<ul class="spollers__services">
+															<li data-img="img/services/waxing/intimate_waxing/1.webp" class="change-image">
+																<div>
+																	<h3>Bikini</h3>
+																	<div>$50+</div>
+																</div>
+																<div>
+																	<p>
+																		Bikini waxing offers a smooth,
+																		long-lasting hair removal solution for the
+																		bikini line, leaving skin clean and
+																		groomed
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/waxing/intimate_waxing/2.webp" class="change-image">
+																<div>
+																	<h3>Brazilian Bikini</h3>
+																	<div>$75+</div>
+																</div>
+																<div>
+																	<p>
+																		Brazilian bikini waxing removes all or
+																		most hair from the bikini area, providing
+																		a smooth, clean look with long-lasting
+																		results
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/waxing/intimate_waxing/3.webp" class="change-image">
+																<div>
+																	<h3>Completely Bare</h3>
+																	<div>$85+</div>
+																</div>
+																<div>
+																	<p>
+																		Combines the two zones described above
+																	</p>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</details>
+											</div>
+											<div class="tabs__actions">
+												<a data-goto-header data-goto=".reserve" class="button" href="#">Book appointment</a>
+											</div>
+										</div>
+										<div class="tabs__img">
+											<img id="photo4" class="tabs__image ibg" src="img/services/hair/cuts_and_styles/1.webp" alt="Image" />
+										</div>
+										<div class="round round--rb">
+											<img class="decor__image ibg" src="img/round.svg" alt="Image" />
+										</div>
+									</div>
+								</div>
+								<div class="tabs__body">
+									<!-- <div class="tabs__text text">
+                      <p></p>
+                    </div> -->
+									<div class="tabs__wrapper">
+										<div class="tabs__about">
+											<div data-spollers="767.98,max" class="spollers">
+												<details data-watch data-watch-once class="spollers__item">
+													<summary data-img="img/services/eyelash/1.webp" class="spollers__title change-image">
+														<h3>Eyelash & Eyebrows</h3>
+														<div data-img="img/services/eyelash/1.webp" class="spollers__text text change-image">
+															<p>
+																Eyelash and eyebrow services, including
+																shaping, tinting, and extensions, are designed
+																to enhance the natural beauty of the eyes,
+																creating a more defined, polished look that
+																highlights facial features
+															</p>
+														</div>
+													</summary>
+													<div class="spollers__body">
+														<ul class="spollers__services">
+															<li data-img="img/services/eyelash/1.webp" class="change-image">
+																<div>
+																	<h3>Eyebrows Lamination</h3>
+																	<div>$60+</div>
+																</div>
+																<div>
+																	<p>
+																		Eyebrow lamination is a semi-permanent
+																		treatment that helps to straighten and set
+																		eyebrow hairs in place
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/eyelash/2.webp" class="change-image">
+																<div>
+																	<h3>Eyebrows Shape</h3>
+																	<div>$20+</div>
+																</div>
+																<div>
+																	<p>
+																		Our expert aestheticians provide
+																		personalized eyebrow-shaping services
+																		tailored to complement your unique
+																		features. We carefully consider your
+																		facial structure, preferences, and trends
+																		to create the perfect eyebrow shape for
+																		you
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/eyelash/3.webp" class="change-image">
+																<div>
+																	<h3>Eyebrows Tint</h3>
+																	<div>$25+</div>
+																</div>
+																<div>
+																	<p>
+																		Eyebrow tinting is a fantastic way to
+																		enhance the color and definition of your
+																		eyebrows
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/eyelash/4.webp" class="change-image">
+																<div>
+																	<h3>Eyelash Lift and Tint</h3>
+																	<div>$70+</div>
+																</div>
+																<div>
+																	<p>
+																		Our eyelash lift and tint service offer a
+																		hassle-free way to achieve lifted, curled,
+																		and tinted lashes, making your eyes appear
+																		more open and expressive
+																	</p>
+																</div>
+															</li>
+															<li data-img="img/services/eyelash/5.webp" class="change-image">
+																<div>
+																	<h3>Classic Lash Extensions</h3>
+																	<div>$80+</div>
+																</div>
+																<div>
+																	<p>
+																		Classic lash extensions involve applying
+																		one extension to each natural lash,
+																		creating a natural and elegant enhancement
+																		to the eyes
+																	</p>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</details>
+											</div>
+											<div class="tabs__actions">
+												<a data-goto-header data-goto=".reserve" class="button" href="#">Book appointment</a>
+											</div>
+										</div>
+										<div class="tabs__img">
+											<img id="photo5" class="tabs__image ibg" src="img/services/nail/1.webp" alt="Image" />
+										</div>
+										<div class="round round--rb">
+											<img class="decor__image ibg" src="img/round.svg" alt="Image" />
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1147,6 +1630,51 @@
 							setTimeout(() => {
 								photo2.src = newImage;
 								photo2.style.opacity = 1;
+							}, 500);
+						});
+					});
+				</script>
+				<script>
+					const headings3 = document.querySelectorAll(".change-image");
+					const photo3 = document.getElementById("photo3");
+
+					headings3.forEach((heading) => {
+						heading.addEventListener("click", () => {
+							const newImage = heading.getAttribute("data-img");
+							photo3.style.opacity = 0;
+							setTimeout(() => {
+								photo3.src = newImage;
+								photo3.style.opacity = 1;
+							}, 500);
+						});
+					});
+				</script>
+				<script>
+					const headings4 = document.querySelectorAll(".change-image");
+					const photo4 = document.getElementById("photo4");
+
+					headings4.forEach((heading) => {
+						heading.addEventListener("click", () => {
+							const newImage = heading.getAttribute("data-img");
+							photo4.style.opacity = 0;
+							setTimeout(() => {
+								photo4.src = newImage;
+								photo4.style.opacity = 1;
+							}, 500);
+						});
+					});
+				</script>
+				<script>
+					const headings5 = document.querySelectorAll(".change-image");
+					const photo5 = document.getElementById("photo5");
+
+					headings5.forEach((heading) => {
+						heading.addEventListener("click", () => {
+							const newImage = heading.getAttribute("data-img");
+							photo5.style.opacity = 0;
+							setTimeout(() => {
+								photo5.src = newImage;
+								photo5.style.opacity = 1;
 							}, 500);
 						});
 					});
@@ -1398,13 +1926,72 @@
 					</article>
 				</div>
 			</section>
+			<div class="page__contact contact">
+				<div class="contact__container">
+					<div class="contact__item">
+						<div class="contact__img">
+							<img class="contact__image ibg ibg--contain" src="img/contact.svg" alt="Image" />
+						</div>
+						<div class="contact__about">Contact</div>
+						<div class="contact__body">
+							<a href="tel:13000000000">13000000000</a>
+							<a href="mailto:info@laurenbeuty">info@laurenbeuty</a>
+						</div>
+					</div>
+					<div class="contact__item">
+						<div class="contact__img">
+							<img class="contact__image ibg ibg--contain" src="img/hours.svg" alt="Image" />
+						</div>
+						<div class="contact__about">Hours</div>
+						<div class="contact__body">
+							<span>Mon to Fri: 9 AM -7 PM</span>
+							<span>Sat: 9 AM - 3 PM</span>
+						</div>
+					</div>
+					<div class="contact__item">
+						<div class="contact__img">
+							<img class="contact__image ibg ibg--contain" src="img/location.svg" alt="Image" />
+						</div>
+						<div class="contact__about">Location</div>
+						<address class="contact__body">
+							<span>48 W. Rector St., Suite #28</span>
+							<span>San Antonio, TX 78216</span>
+						</address>
+					</div>
+				</div>
+			</div>
+			<section class="page__reserve reserve">
+				<div class="reserve__container"></div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
+				<div class="footer__aside">
+					<a data-goto-header data-goto=".hero" href="#" class="footer__logo">
+						<img class="footer__logo-img ibg ibg--contain" src="img/logo.svg " alt="logo" />
+					</a>
+					<div class="footer__description">
+						Caring for your skin, hair, and nails is a simple way to invest in
+						yourself and feel amazing every day!
+					</div>
+				</div>
+				<div class="footer__body">
+					<h2 class="footer__subscribe">Subscribe to our Newsletter</h2>
+					<form class="footer__form">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum saepe,
+						eius, quod eligendi molestias et iste dicta omnis reiciendis corrupti
+						excepturi quae minima assumenda vero adipisci odit labore ab. Nihil?
+					</form>
+					<div class="footer__copy">
+						Copyright Lauren Beauty Salon 2024. Power by
+						<a target="_blank" href="https://webintersol.com/">Web Interface Solutions.</a>
+					</div>
+				</div>
 			</div>
 		</footer>
+
 	</div>
-	<script src="js/app.min.js?_v=20241219140117"></script>
+	<script src="js/app.min.js?_v=20241220130831"></script>
 </body>
 
 </html>
