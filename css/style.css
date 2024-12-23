@@ -265,6 +265,9 @@ svg {
 .change-image {
   transition: opacity .5s ease-in-out 1.5s
 }
+.test:focus {
+  outline: 1px solid #923984
+}
 .header {
   position: fixed;
   width: 100%;
@@ -769,6 +772,276 @@ svg {
 .contact__body a {
   transition: all .3s
 }
+.reserve {
+  background: #fdf6fc
+}
+.form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 3.125rem
+}
+.form__input {
+  border: 1px solid #f2cff0;
+  background: #fff;
+  color: #923984;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding: 1.1875rem 1rem
+}
+.form__input:focus {
+  outline: 1px solid #923984;
+  border-radius: 5px
+}
+.form__input::-webkit-input-placeholder {
+  color: #cd68c0;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal
+}
+.form__input:-ms-input-placeholder {
+  color: #cd68c0;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal
+}
+.form__input::-ms-input-placeholder {
+  color: #cd68c0;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal
+}
+.form__input::placeholder {
+  color: #cd68c0;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal
+}
+.form__items {
+  border: 1px solid #f2cff0;
+  background: #fff
+}
+.form__checked {
+  color: #3f1336;
+  padding: 1.1875rem 0;
+  width: 100%;
+  cursor: default;
+  text-align: left;
+  display: grid;
+  gap: 1rem;
+  position: relative;
+  list-style: none;
+  color: #cd68c0;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal
+}
+.form__checked span {
+  padding-left: 1rem;
+  padding-right: 2.5rem
+}
+.form__checked::-webkit-details-marker,
+.form__checked::marker {
+  display: none
+}
+._spoller-init .form__checked {
+  cursor: pointer;
+  position: relative;
+  transition: all .5s
+}
+._spoller-init .form__checked::before {
+  content: "";
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  display: inline-block;
+  background: url(../img/icons/arrow-top.svg) 0 0 no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  transition: all .5s ease 0s
+}
+._spoller-init .form__checked._spoller-active::before {
+  background: url(../img/icons/arrow-top.svg) 0 0 no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg)
+}
+.form__body {
+  transition: all .5s ease 0s
+}
+.form__item {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  opacity: 0;
+  -webkit-transform: translate(0,15%);
+  transform: translate(0,15%);
+  transition: opacity .3s,-webkit-transform .3s;
+  transition: opacity .3s,transform .3s;
+  transition: opacity .3s,transform .3s,-webkit-transform .3s
+}
+.form__item._watcher-view {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0)
+}
+.form__item._watcher-view:nth-child(1) {
+  transition-delay: .2s
+}
+.form__item._watcher-view:nth-child(2) {
+  transition-delay: .3s
+}
+.form__item._watcher-view:nth-child(3) {
+  transition-delay: .4s
+}
+.form__item._watcher-view:nth-child(4) {
+  transition-delay: .5s
+}
+.form__item._watcher-view:nth-child(5) {
+  transition-delay: .6s
+}
+.form__item._watcher-view:nth-child(6) {
+  transition-delay: .7s
+}
+.form__item._watcher-view:nth-child(7) {
+  transition-delay: .8s
+}
+.form__item._watcher-view:nth-child(8) {
+  transition-delay: .9s
+}
+.form__item._watcher-view:nth-child(9) {
+  transition-delay: 1s
+}
+.form__item._watcher-view:nth-child(10) {
+  transition-delay: 1.1s
+}
+.form__title {
+  padding: 1rem 2rem;
+  padding-right: 4.0625rem;
+  border-top: 1px solid #f2cff0;
+  border-bottom: 1px solid #f2cff0;
+  width: 100%;
+  cursor: default;
+  text-align: left;
+  display: grid;
+  gap: 1rem;
+  position: relative;
+  list-style: none;
+  color: #3f1336;
+  font-family: "Open Sans";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal
+}
+.form__title::-webkit-details-marker,
+.form__title::marker {
+  display: none
+}
+._spoller-init .form__title {
+  cursor: pointer;
+  position: relative;
+  transition: all .5s
+}
+._spoller-init .form__title::before {
+  content: "";
+  position: absolute;
+  right: 2.0625rem;
+  top: 1rem;
+  display: inline-block;
+  background: url(../img/icons/plus.svg) 0 0 no-repeat;
+  background-size: cover;
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: all .5s ease 0s
+}
+._spoller-init .form__title._spoller-active {
+  background-color: #fdf6fc;
+  color: #923984
+}
+._spoller-init .form__title._spoller-active::before {
+  top: 1rem;
+  background: url(../img/icons/minus.svg) 0 0 no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg)
+}
+._spoller-init .form__title._spoller-active+div {
+  background-color: #fdf6fc
+}
+.form__unit {
+  justify-content: space-between;
+  gap: .9375rem;
+  padding: 1rem;
+  padding-left: 3rem;
+  display: flex;
+  color: #3f1336;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border-bottom: 1px solid #f2cff0
+}
+.form__label {
+  width: 100%;
+  padding-right: 3rem;
+  color: #3f1336;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse
+}
+.form__label::before {
+  content: "";
+  flex: 0 0 1rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0);
+  transition: all .5s ease-in-out;
+  border: 1px solid #cd68c0
+}
+.form__label--radio::before {
+  border-radius: 50%
+}
+.form__check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0
+}
+.form__check:checked+.form__label::before {
+  background: url(../img/icons/checkbox.svg) center/100% no-repeat
+}
 .swiper {
   overflow: hidden
 }
@@ -864,6 +1137,12 @@ svg {
   }
   .page__contact {
     padding-bottom: 5.9375rem
+  }
+  .page__reserve {
+    padding-top: 5.625rem
+  }
+  .page__reserve {
+    padding-bottom: 5.625rem
   }
   .hero {
     padding-top: 16.875rem
@@ -986,6 +1265,12 @@ svg {
   }
   .page__contact {
     padding-bottom: 3.125rem
+  }
+  .page__reserve {
+    padding-top: 2.8125rem
+  }
+  .page__reserve {
+    padding-bottom: 2.8125rem
   }
   .hero {
     padding-top: 7.5rem
@@ -1230,6 +1515,41 @@ svg {
   .portfolio__list {
     grid-template-columns: auto
   }
+  .form__item._watcher-view {
+    opacity: 1;
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0)
+  }
+  .form__item._watcher-view:nth-child(1) {
+    transition-delay: .15s
+  }
+  .form__item._watcher-view:nth-child(2) {
+    transition-delay: .2s
+  }
+  .form__item._watcher-view:nth-child(3) {
+    transition-delay: .25s
+  }
+  .form__item._watcher-view:nth-child(4) {
+    transition-delay: .3s
+  }
+  .form__item._watcher-view:nth-child(5) {
+    transition-delay: .35s
+  }
+  .form__item._watcher-view:nth-child(6) {
+    transition-delay: .4s
+  }
+  .form__item._watcher-view:nth-child(7) {
+    transition-delay: .45s
+  }
+  .form__item._watcher-view:nth-child(8) {
+    transition-delay: .5s
+  }
+  .form__item._watcher-view:nth-child(9) {
+    transition-delay: .55s
+  }
+  .form__item._watcher-view:nth-child(10) {
+    transition-delay: .6s
+  }
 }
 @media (max-width:47.99875em)and (any-hover:none) {
   .icon-menu {
@@ -1296,6 +1616,12 @@ svg {
   }
   .page__contact {
     padding-bottom: clamp(3.125rem ,2.3097826087rem + 4.0760869565vw ,5.9375rem)
+  }
+  .page__reserve {
+    padding-top: clamp(2.8125rem ,1.9972826087rem + 4.0760869565vw ,5.625rem)
+  }
+  .page__reserve {
+    padding-bottom: clamp(2.8125rem ,1.9972826087rem + 4.0760869565vw ,5.625rem)
   }
   .hero {
     padding-top: clamp(7.5rem ,4.7826086957rem + 13.5869565217vw ,16.875rem)
