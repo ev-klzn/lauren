@@ -262,9 +262,6 @@ svg {
   line-height: normal;
   text-transform: uppercase
 }
-.change-image {
-  transition: opacity .5s ease-in-out 1.5s
-}
 .test:focus {
   outline: 1px solid #923984
 }
@@ -508,7 +505,6 @@ svg {
   position: relative
 }
 .tabs__image {
-  transition: opacity .5s ease-in-out;
   aspect-ratio: 860/704;
   max-height: 100vh;
   position: sticky;
