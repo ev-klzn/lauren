@@ -72,7 +72,6 @@ h6 {
   font-size: inherit
 }
 body {
-  opacity: 0;
   font-weight: 300
 }
 .lock body {
@@ -80,10 +79,6 @@ body {
   touch-action: none;
   -ms-scroll-chaining: none;
   overscroll-behavior: none
-}
-.loaded body {
-  opacity: 1;
-  transition: .2s
 }
 .wrapper {
   min-height: 100%;
@@ -836,7 +831,7 @@ svg {
 }
 .hero__container {
   position: relative;
-  z-index: 1;
+  z-index: 999;
   align-content: center
 }
 .hero__title {
@@ -1581,9 +1576,6 @@ svg {
   .page__reserve {
     padding-bottom: 5.625rem
   }
-  .hero {
-    padding-top: 16.875rem
-  }
   .hero__title {
     margin-bottom: 2.5rem
   }
@@ -1631,6 +1623,9 @@ svg {
   .footer {
     padding-top: 5.625rem
   }
+  .hero {
+    padding-top: 16.875rem
+  }
   .reserve__actions {
     padding-top: 3.125rem
   }
@@ -1652,6 +1647,9 @@ svg {
   }
 }
 @media (max-width:64em) {
+  .hero {
+    padding-top: 5rem
+  }
   .benefits__list {
     grid-template-columns: repeat(2,1fr)
   }
@@ -1678,7 +1676,7 @@ svg {
     padding-right: 1.0625rem
   }
   .title {
-    font-size: 1.75rem
+    font-size: 1.5rem
   }
   .round {
     width: 6.25rem
@@ -1731,14 +1729,11 @@ svg {
   .page__reserve {
     padding-bottom: 2.8125rem
   }
-  .hero {
-    padding-top: 7.5rem
-  }
   .hero__title {
-    margin-bottom: 1.25rem
+    margin-bottom: .9375rem
   }
   .hero__text {
-    margin-bottom: 1.25rem
+    margin-bottom: .9375rem
   }
   .tabs__title {
     padding-left: .9375rem
@@ -2061,7 +2056,7 @@ svg {
     padding-right: clamp(1.0625rem ,.6458333333rem + 2.0833333333vw ,2.5rem)
   }
   .title {
-    font-size: clamp(1.75rem ,.4456521739rem + 6.5217391304vw ,6.25rem)
+    font-size: clamp(1.5rem ,.1231884058rem + 6.884057971vw ,6.25rem)
   }
   .round {
     width: clamp(6.25rem ,4.9456521739rem + 6.5217391304vw ,10.75rem)
@@ -2114,14 +2109,11 @@ svg {
   .page__reserve {
     padding-bottom: clamp(2.8125rem ,1.9972826087rem + 4.0760869565vw ,5.625rem)
   }
-  .hero {
-    padding-top: clamp(7.5rem ,4.7826086957rem + 13.5869565217vw ,16.875rem)
-  }
   .hero__title {
-    margin-bottom: clamp(1.25rem ,.8876811594rem + 1.8115942029vw ,2.5rem)
+    margin-bottom: clamp(.9375rem ,.4846014493rem + 2.2644927536vw ,2.5rem)
   }
   .hero__text {
-    margin-bottom: clamp(1.25rem ,.8876811594rem + 1.8115942029vw ,2.5rem)
+    margin-bottom: clamp(.9375rem ,.4846014493rem + 2.2644927536vw ,2.5rem)
   }
   .tabs__title {
     padding-left: clamp(.9375rem ,.2490942029rem + 3.4420289855vw ,3.3125rem)
@@ -2179,6 +2171,11 @@ svg {
   }
   .form--footer {
     margin-bottom: clamp(.9375rem ,-.1041666667rem + 2.1701388889vw ,2.5rem)
+  }
+}
+@media (min-width:64em)and (max-width:120em) {
+  .hero {
+    padding-top: clamp(5rem ,-8.5714285714rem + 21.2053571429vw ,16.875rem)
   }
 }
 @media (any-hover:hover) {
