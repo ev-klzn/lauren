@@ -121,14 +121,444 @@ body {
   padding-bottom: 1.0625rem;
   transition: all .3s
 }
-.button:hover {
-  background: #b049a1!important
-}
 .button--fw {
   width: 100%
 }
-#map {
-  background: url(../img/icons/loading.webp) center/50px no-repeat
+.button:focus {
+  outline: 1px solid #923984
+}
+input[type=email],
+input[type=tel],
+input[type=text],
+textarea {
+  -webkit-appearance: none;
+  appearance: none
+}
+.input {
+  border-radius: 0!important;
+  width: 100%;
+  display: block;
+  caret-color: inherit;
+  padding: 0;
+  border: 1px solid #f2cff0;
+  background: #fff;
+  color: #3f1336;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal
+}
+.input._form-focus {
+  outline: 1px solid #923984;
+  border-radius: 5px
+}
+.input[placeholder]:not([data-placeholder-nohiden])::-webkit-input-placeholder {
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+  color: #923984;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding: 0
+}
+.input[placeholder]:not([data-placeholder-nohiden]):-ms-input-placeholder {
+  -ms-transition: opacity .3s;
+  transition: opacity .3s;
+  color: #923984;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding: 0
+}
+.input[placeholder]:not([data-placeholder-nohiden])::-ms-input-placeholder {
+  -ms-transition: opacity .3s;
+  transition: opacity .3s;
+  color: #923984;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding: 0
+}
+.input[placeholder]:not([data-placeholder-nohiden])::placeholder {
+  transition: opacity .3s;
+  color: #923984;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding: 0
+}
+.input[placeholder]:not([data-placeholder-nohiden]):focus::-webkit-input-placeholder {
+  opacity: 0
+}
+.input[placeholder]:not([data-placeholder-nohiden]):focus:-ms-input-placeholder {
+  opacity: 0
+}
+.input[placeholder]:not([data-placeholder-nohiden]):focus::-ms-input-placeholder {
+  opacity: 0
+}
+.input[placeholder]:not([data-placeholder-nohiden]):focus::placeholder {
+  opacity: 0
+}
+textarea.input {
+  resize: vertical;
+  padding: 1.1875rem 1rem;
+  height: 4rem
+}
+input:valid {
+  border: 1px solid green
+}
+.qs-datepicker-container {
+  margin: 5px;
+  font-size: 1rem;
+  font-family: sans-serif;
+  color: #3f1336;
+  position: absolute;
+  width: 15.625em;
+  display: flex;
+  flex-direction: column;
+  z-index: 9001;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+  background: #fff;
+  padding: 5px
+}
+.qs-datepicker-container:after,
+.qs-datepicker-container:before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  left: 0;
+  z-index: 2;
+  position: absolute
+}
+.qs-datepicker-container:before {
+  top: 0
+}
+.qs-datepicker-container:after {
+  bottom: 0
+}
+.qs-datepicker-container * {
+  box-sizing: border-box
+}
+.qs-datepicker-container.qs-centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%)
+}
+.qs-datepicker-container.qs-hidden {
+  display: none
+}
+.qs-datepicker .qs-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.75);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: .5em;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity .3s;
+  display: flex;
+  flex-direction: column
+}
+.qs-datepicker .qs-overlay.qs-hidden {
+  opacity: 0;
+  z-index: -1
+}
+.qs-datepicker .qs-overlay .qs-overlay-year {
+  background: rgba(0,0,0,0);
+  border: none;
+  border-bottom: 1px solid #fff;
+  border-radius: 0;
+  color: #fff;
+  font-size: .875em;
+  padding: .25em 0;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  display: block
+}
+.qs-datepicker .qs-overlay .qs-overlay-year::-webkit-inner-spin-button {
+  -webkit-appearance: none
+}
+.qs-datepicker .qs-overlay .qs-close {
+  padding: .5em;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0
+}
+.qs-datepicker .qs-overlay .qs-submit {
+  border: 1px solid #fff;
+  border-radius: .26392em;
+  padding: .5em;
+  margin: 0 auto auto;
+  cursor: pointer;
+  background: rgba(128,128,128,.4)
+}
+.qs-datepicker .qs-overlay .qs-submit.qs-disabled {
+  color: gray;
+  border-color: gray;
+  cursor: not-allowed
+}
+.qs-datepicker .qs-overlay .qs-overlay-month-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1
+}
+.qs-datepicker .qs-overlay .qs-overlay-month {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.33333%;
+  cursor: pointer;
+  opacity: .5;
+  transition: opacity .15s
+}
+.qs-datepicker .qs-overlay .qs-overlay-month.active,
+.qs-datepicker .qs-overlay .qs-overlay-month:hover {
+  opacity: 1
+}
+.qs-datepicker .qs-controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 0;
+  background: #faedfa;
+  color: #cd68c0;
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  transition: -webkit-filter .3s;
+  transition: filter .3s;
+  transition: filter .3s,-webkit-filter .3s;
+  transition: filter .3s,-webkit-filter .3s
+}
+.qs-datepicker .qs-controls.qs-blur {
+  -webkit-filter: blur(5px);
+  filter: blur(5px)
+}
+.qs-datepicker .qs-arrow {
+  height: 1.5625em;
+  width: 1.5625em;
+  position: relative;
+  cursor: pointer;
+  border-radius: .26392em;
+  transition: background .15s
+}
+.qs-datepicker .qs-arrow:hover {
+  background: rgba(0,0,0,.1)
+}
+.qs-datepicker .qs-arrow:hover.qs-left:after {
+  border-right-color: #000
+}
+.qs-datepicker .qs-arrow:hover.qs-right:after {
+  border-left-color: #000
+}
+.qs-datepicker .qs-arrow:after {
+  content: "";
+  border: .39062em solid transparent;
+  position: absolute;
+  top: 50%;
+  transition: border .2s
+}
+.qs-datepicker .qs-arrow.qs-left:after {
+  border-right-color: gray;
+  right: 50%;
+  -webkit-transform: translate(25%,-50%);
+  transform: translate(25%,-50%)
+}
+.qs-datepicker .qs-arrow.qs-right:after {
+  border-left-color: gray;
+  left: 50%;
+  -webkit-transform: translate(-25%,-50%);
+  transform: translate(-25%,-50%)
+}
+.qs-datepicker .qs-month-year {
+  font-weight: 700;
+  transition: border .2s;
+  border-bottom: 1px solid transparent;
+  cursor: pointer
+}
+.qs-datepicker .qs-month-year:hover {
+  border-bottom: 1px solid gray
+}
+.qs-datepicker .qs-month-year:active:focus,
+.qs-datepicker .qs-month-year:focus {
+  outline: 0
+}
+.qs-datepicker .qs-month {
+  padding-right: .5ex
+}
+.qs-datepicker .qs-year {
+  padding-left: .5ex
+}
+.qs-datepicker .qs-squares {
+  display: flex;
+  color: #3f1336;
+  flex-wrap: wrap;
+  padding: .3125em;
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  transition: -webkit-filter .3s;
+  transition: filter .3s;
+  transition: filter .3s,-webkit-filter .3s;
+  transition: filter .3s,-webkit-filter .3s
+}
+.qs-datepicker .qs-squares.qs-blur {
+  -webkit-filter: blur(5px);
+  filter: blur(5px)
+}
+.qs-datepicker .qs-square {
+  width: 14.28571%;
+  height: 1.5625em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background .1s
+}
+.qs-datepicker .qs-square.qs-current {
+  font-weight: 700
+}
+.qs-datepicker .qs-square.qs-current span {
+  text-decoration: underline
+}
+.qs-datepicker .qs-square.qs-active {
+  background: #cd68c0;
+  color: #fff
+}
+.qs-datepicker .qs-square.qs-range-date-start:not(.qs-range-date-6) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0
+}
+.qs-datepicker .qs-square.qs-range-date-middle {
+  background: #d4ebf2
+}
+.qs-datepicker .qs-square.qs-range-date-middle:not(.qs-range-date-0):not(.qs-range-date-6) {
+  border-radius: 0
+}
+.qs-datepicker .qs-square.qs-range-date-middle.qs-range-date-0 {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0
+}
+.qs-datepicker .qs-square.qs-range-date-end:not(.qs-range-date-0),
+.qs-datepicker .qs-square.qs-range-date-middle.qs-range-date-6 {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0
+}
+.qs-datepicker .qs-square.qs-disabled span {
+  opacity: .2
+}
+.qs-datepicker .qs-square.qs-empty {
+  cursor: default
+}
+.qs-datepicker .qs-square.qs-disabled {
+  cursor: not-allowed
+}
+.qs-datepicker .qs-square.qs-day {
+  cursor: default;
+  font-weight: 700;
+  color: gray
+}
+.qs-datepicker .qs-square:not(.qs-empty):not(.qs-disabled):not(.qs-day):not(.qs-active):hover {
+  background: #faedfa
+}
+.qs-datepicker .qs-event {
+  position: relative
+}
+.qs-datepicker .qs-event:after {
+  content: "";
+  position: absolute;
+  width: .46875em;
+  height: .46875em;
+  border-radius: 50%;
+  background: #07f;
+  bottom: 0;
+  right: 0
+}
+.qs-datepicker .qs-event.qs-disabled:after,
+.qs-datepicker .qs-event.qs-empty:after {
+  background: #cce4ff
+}
+body::after {
+  content: "";
+  background-color: rgba(0,0,0,.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .8s ease 0s;
+  pointer-events: none;
+  z-index: 149
+}
+.popup-show body::after {
+  opacity: 1
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 30px 10px;
+  transition: visibility .8s ease 0s;
+  visibility: hidden;
+  pointer-events: none
+}
+.popup_show {
+  z-index: 150;
+  visibility: visible;
+  overflow: auto;
+  pointer-events: auto
+}
+.popup_show .popup__content {
+  visibility: visible;
+  -webkit-transform: scale(1);
+  transform: scale(1)
+}
+.popup__wrapper {
+  flex-direction: column;
+  min-height: 100%;
+  flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.popup__content {
+  visibility: hidden;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  transition: -webkit-transform .3s ease 0s;
+  transition: transform .3s ease 0s;
+  transition: transform .3s ease 0s,-webkit-transform .3s ease 0s;
+  background-color: #eee;
+  padding: 20px;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 20px
+}
+.lock .popup__content {
+  visibility: visible
 }
 .ibg {
   width: 100%;
@@ -505,6 +935,7 @@ svg {
   position: relative
 }
 .tabs__image {
+  transition: .3s linear .3s;
   aspect-ratio: 860/704;
   max-height: 100vh;
   position: sticky;
@@ -770,6 +1201,10 @@ svg {
 }
 .reserve {
   background: #fdf6fc
+}
+.reserve__actions {
+  padding-top: 2.5rem;
+  text-align: center
 }
 .form {
   width: 100%;

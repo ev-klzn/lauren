@@ -33,7 +33,7 @@
       visibility: visible;
     }
   </style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241224090658">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241224105358">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 </head>
 
@@ -214,7 +214,7 @@
 						</div>
 					</div>
 				</div>
-				<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241224090658"></script>
+				<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241224105358"></script>
 				<script>
 					var swiper = new Swiper(".mySwiper", {
 						loop: true,
@@ -1976,9 +1976,9 @@
 							</p>
 						</div>
 					</div>
-					<form class="form" id="form" action="#" method="GET">
-						<input class="form__input" id="name" name="name" type="text" placeholder="Name:" />
-						<input class="form__input" id="phone" name="phone" type="tel" placeholder="Phone number:" />
+					<form netlify class="form" id="form" action="#" method="GET">
+						<input data-required data-validate required class="form__input input" id="name" name="name" type="text" placeholder="Name: *" />
+						<input data-required data-validate required pattern="^\d{10,12}$" class="form__input input" id="phone" name="phone" type="tel" placeholder="Phone number: *" />
 						<div data-watch data-spollers class="form__services">
 							<details data-watch class="form__items">
 								<summary class="form__checked">
@@ -2175,8 +2175,14 @@
 								</div>
 							</details>
 						</div>
-						<button form="form" type="submit">submit</button>
+						<input required class="form__input input" data-datepicker type="text" name="date" placeholder="Select date" />
+						<textarea data-autoheight class="input" name="textarea" id="textarea" placeholder="Write a message if you want..."></textarea>
 					</form>
+					<div class="reserve__actions">
+						<button class="button" form="form" type="submit">
+							Book appointment
+						</button>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -2207,7 +2213,7 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20241224090658"></script>
+	<script src="js/app.min.js?_v=20241224105358"></script>
 </body>
 
 </html>
