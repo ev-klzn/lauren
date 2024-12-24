@@ -1163,9 +1163,11 @@ svg {
   background-color: #faedfa
 }
 .contact__container {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(3,1fr)
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 57.875rem;
+  justify-content: space-between;
+  gap: 1.875rem
 }
 .contact__item {
   display: grid;
@@ -1205,7 +1207,6 @@ svg {
   background: #fdf6fc
 }
 .reserve__actions {
-  padding-top: 2.5rem;
   text-align: center
 }
 .form {
@@ -1623,7 +1624,7 @@ svg {
 }
 @media (min-width:120em) {
   .footer {
-    padding-top: 6.25rem
+    padding-top: 5.625rem
   }
   .reserve__actions {
     padding-top: 3.125rem
@@ -1652,7 +1653,7 @@ svg {
 }
 @media (max-width:48em) {
   .footer {
-    padding-top: 3.125rem
+    padding-top: .0000000625rem
   }
   .reserve__actions {
     padding-top: .9375rem
@@ -1916,7 +1917,7 @@ svg {
     align-items: center
   }
   .footer__body {
-    max-width: auto
+    max-width: 100%
   }
   .hero__text {
     max-width: 100%
@@ -1977,6 +1978,19 @@ svg {
   }
   .portfolio__list {
     grid-template-columns: auto
+  }
+  .contact__container {
+    justify-content: center;
+    gap: 1.5625rem
+  }
+  .contact__about {
+    margin-bottom: .625rem
+  }
+  .contact__body {
+    gap: .3125rem
+  }
+  .reserve__button {
+    width: 100%
   }
   .form {
     grid-template-columns: auto
@@ -2150,7 +2164,7 @@ svg {
 }
 @media (min-width:48em)and (max-width:120em) {
   .footer {
-    padding-top: clamp(3.125rem ,1.0416666667rem + 4.3402777778vw ,6.25rem)
+    padding-top: clamp(.0000000625rem ,-3.7499998958rem + 7.8124999132vw ,5.625rem)
   }
   .reserve__actions {
     padding-top: clamp(.9375rem ,-.5208333333rem + 3.0381944444vw ,3.125rem)
