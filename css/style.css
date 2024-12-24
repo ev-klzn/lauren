@@ -1211,7 +1211,7 @@ svg {
   grid-template-columns: repeat(2,1fr)
 }
 .form--footer {
-  gap: 1.25rem;
+  gap: 1.25rem!important;
   grid-template-columns: 3fr 1fr;
   justify-items: center
 }
