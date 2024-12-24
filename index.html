@@ -33,7 +33,7 @@
       visibility: visible;
     }
   </style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241224110345">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241224122050">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 </head>
 
@@ -214,7 +214,7 @@
 						</div>
 					</div>
 				</div>
-				<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241224110345"></script>
+				<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241224122050"></script>
 				<script>
 					var swiper = new Swiper(".mySwiper", {
 						loop: true,
@@ -1926,40 +1926,7 @@
 					</article>
 				</div>
 			</section>
-			<div class="page__contact contact">
-				<div class="contact__container">
-					<div class="contact__item">
-						<div class="contact__img">
-							<img class="contact__image ibg ibg--contain" src="img/contact.svg" alt="Image" />
-						</div>
-						<div class="contact__about">Contact</div>
-						<div class="contact__body">
-							<a href="tel:13000000000">13000000000</a>
-							<a href="mailto:info@laurenbeuty">info@laurenbeuty</a>
-						</div>
-					</div>
-					<div class="contact__item">
-						<div class="contact__img">
-							<img class="contact__image ibg ibg--contain" src="img/hours.svg" alt="Image" />
-						</div>
-						<div class="contact__about">Hours</div>
-						<div class="contact__body">
-							<span>Mon to Fri: 9 AM -7 PM</span>
-							<span>Sat: 9 AM - 3 PM</span>
-						</div>
-					</div>
-					<div class="contact__item">
-						<div class="contact__img">
-							<img class="contact__image ibg ibg--contain" src="img/location.svg" alt="Image" />
-						</div>
-						<div class="contact__about">Location</div>
-						<address class="contact__body">
-							<span>48 W. Rector St., Suite #28</span>
-							<span>San Antonio, TX 78216</span>
-						</address>
-					</div>
-				</div>
-			</div>
+
 			<section class="page__reserve reserve">
 				<div class="reserve__container">
 					<div class="header-block header-block--mb">
@@ -2185,6 +2152,40 @@
 					</div>
 				</div>
 			</section>
+			<div class="page__contact contact">
+				<div class="contact__container">
+					<div class="contact__item">
+						<div class="contact__img">
+							<img class="contact__image ibg ibg--contain" src="img/contact.svg" alt="Image" />
+						</div>
+						<div class="contact__about">Contact</div>
+						<div class="contact__body">
+							<a href="tel:13000000000">13000000000</a>
+							<a href="mailto:info@laurenbeuty">info@laurenbeuty</a>
+						</div>
+					</div>
+					<div class="contact__item">
+						<div class="contact__img">
+							<img class="contact__image ibg ibg--contain" src="img/hours.svg" alt="Image" />
+						</div>
+						<div class="contact__about">Hours</div>
+						<div class="contact__body">
+							<span>Mon to Fri: 9 AM -7 PM</span>
+							<span>Sat: 9 AM - 3 PM</span>
+						</div>
+					</div>
+					<div class="contact__item">
+						<div class="contact__img">
+							<img class="contact__image ibg ibg--contain" src="img/location.svg" alt="Image" />
+						</div>
+						<div class="contact__about">Location</div>
+						<address class="contact__body">
+							<span>48 W. Rector St., Suite #28</span>
+							<span>San Antonio, TX 78216</span>
+						</address>
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -2199,10 +2200,11 @@
 				</div>
 				<div class="footer__body">
 					<h2 class="footer__subscribe">Subscribe to our Newsletter</h2>
-					<form class="footer__form">
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum saepe,
-						eius, quod eligendi molestias et iste dicta omnis reiciendis corrupti
-						excepturi quae minima assumenda vero adipisci odit labore ab. Nihil?
+					<form netlify class="form form--footer" id="email" name="email" method="POST">
+						<input data-required data-validate required type="formemail" name="mail" id="mail" placeholder="Email Address:" class="form__input input" />
+						<button class="button button--fw" form="formemail" type="submit">
+							Get News
+						</button>
 					</form>
 					<div class="footer__copy">
 						Copyright Lauren Beauty Salon 2024. Power by
@@ -2213,7 +2215,7 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20241224110345"></script>
+	<script src="js/app.min.js?_v=20241224122050"></script>
 </body>
 
 </html>

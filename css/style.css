@@ -114,7 +114,9 @@ body {
 .button {
   text-transform: capitalize;
   color: #fff;
+  white-space: nowrap;
   background: #cd68c0;
+  justify-content: center;
   font-size: 1.5rem;
   display: inline-flex;
   padding-top: 1rem;
@@ -647,42 +649,42 @@ svg {
 }
 @-webkit-keyframes spin {
   0% {
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%)
+    -webkit-transform: translate(-50%,-50%) rotate(0);
+    transform: translate(-50%,-50%) rotate(0)
   }
   100% {
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%)
+    -webkit-transform: translate(-50%,-50%) rotate(360deg);
+    transform: translate(-50%,-50%) rotate(360deg)
   }
 }
 @keyframes spin {
   0% {
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%)
+    -webkit-transform: translate(-50%,-50%) rotate(0);
+    transform: translate(-50%,-50%) rotate(0)
   }
   100% {
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%)
+    -webkit-transform: translate(-50%,-50%) rotate(360deg);
+    transform: translate(-50%,-50%) rotate(360deg)
   }
 }
 @-webkit-keyframes spinrb {
   0% {
-    -webkit-transform: translate(50%,50%);
-    transform: translate(50%,50%)
+    -webkit-transform: translate(50%,50%) rotate(0);
+    transform: translate(50%,50%) rotate(0)
   }
   100% {
-    -webkit-transform: translate(50%,50%);
-    transform: translate(50%,50%)
+    -webkit-transform: translate(50%,50%) rotate(360deg);
+    transform: translate(50%,50%) rotate(360deg)
   }
 }
 @keyframes spinrb {
   0% {
-    -webkit-transform: translate(50%,50%);
-    transform: translate(50%,50%)
+    -webkit-transform: translate(50%,50%) rotate(0);
+    transform: translate(50%,50%) rotate(0)
   }
   100% {
-    -webkit-transform: translate(50%,50%);
-    transform: translate(50%,50%)
+    -webkit-transform: translate(50%,50%) rotate(360deg);
+    transform: translate(50%,50%) rotate(360deg)
   }
 }
 .header-block__title {
@@ -765,13 +767,14 @@ svg {
   display: grid;
   gap: 1.875rem;
   justify-content: space-between;
-  grid-template-columns: repeat(2,auto)
+  grid-template-columns: auto auto
 }
 .footer__aside {
-  max-width: 28.625rem
+  max-width: 26.25rem
 }
 .footer__logo {
   width: 10rem;
+  flex: 0 0 10rem;
   margin-bottom: 1.25rem
 }
 .footer__logo-img {
@@ -814,7 +817,8 @@ svg {
 }
 .hero {
   min-height: 100vh;
-  position: relative
+  position: relative;
+  z-index: 1
 }
 .hero__image {
   aspect-ratio: 1820/900;
@@ -827,17 +831,12 @@ svg {
 }
 .hero__container {
   position: relative;
-  z-index: 2;
   align-content: center
 }
 .hero__title {
-  position: relative;
-  z-index: 3;
   max-width: 37.5rem
 }
 .hero__text {
-  position: relative;
-  z-index: 3;
   max-width: 36.625rem
 }
 .hero__button {
@@ -1209,8 +1208,12 @@ svg {
 .form {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 3.125rem
+  grid-template-columns: repeat(2,1fr)
+}
+.form--footer {
+  gap: 1.25rem;
+  grid-template-columns: 3fr 1fr;
+  justify-items: center
 }
 .form__input {
   border: 1px solid #f2cff0;
@@ -1533,12 +1536,6 @@ svg {
   .header__logo {
     gap: 1.5rem
   }
-  .footer {
-    padding-top: 6.25rem
-  }
-  .footer__form {
-    margin-bottom: 2.5rem
-  }
   .page__services {
     margin-top: 5.625rem
   }
@@ -1621,6 +1618,20 @@ svg {
     padding: 1.875rem
   }
 }
+@media (min-width:120em) {
+  .footer {
+    padding-top: 6.25rem
+  }
+  .reserve__actions {
+    padding-top: 3.125rem
+  }
+  .form {
+    gap: 3.125rem
+  }
+  .form--footer {
+    margin-bottom: 2.5rem
+  }
+}
 @media (max-width:120em) {
   .portfolio__list {
     grid-template-columns: repeat(3,1fr)
@@ -1634,6 +1645,20 @@ svg {
 @media (max-width:64em) {
   .benefits__list {
     grid-template-columns: repeat(2,1fr)
+  }
+}
+@media (max-width:48em) {
+  .footer {
+    padding-top: 3.125rem
+  }
+  .reserve__actions {
+    padding-top: .9375rem
+  }
+  .form {
+    gap: .9375rem
+  }
+  .form--footer {
+    margin-bottom: .9375rem
   }
 }
 @media (max-width:20em) {
@@ -1660,12 +1685,6 @@ svg {
   }
   .header__logo {
     gap: .9375rem
-  }
-  .footer {
-    padding-top: 3.125rem
-  }
-  .footer__form {
-    margin-bottom: 1.875rem
   }
   .page__services {
     margin-top: 2.8125rem
@@ -1883,8 +1902,15 @@ svg {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg)
   }
+  .footer__container {
+    grid-template-columns: auto
+  }
   .footer__aside {
-    max-width: auto
+    max-width: 100%;
+    display: flex;
+    gap: .9375rem;
+    justify-content: center;
+    align-items: center
   }
   .footer__body {
     max-width: auto
@@ -1895,6 +1921,9 @@ svg {
   .mySwiper {
     -webkit-transform: translate(0,-100%);
     transform: translate(0,-100%)
+  }
+  .tabs__navigation {
+    justify-content: space-evenly
   }
   .tabs__wrapper {
     grid-template-columns: auto
@@ -1946,6 +1975,9 @@ svg {
   .portfolio__list {
     grid-template-columns: auto
   }
+  .form {
+    grid-template-columns: auto
+  }
   .form__item._watcher-view {
     opacity: 1;
     -webkit-transform: translate(0,0);
@@ -1987,6 +2019,18 @@ svg {
     cursor: default
   }
 }
+@media (max-width:29.99875em) {
+  .footer__aside {
+    flex-direction: column;
+    gap: 0
+  }
+  .footer__logo {
+    margin-bottom: 0
+  }
+  .form--footer {
+    grid-template-columns: auto
+  }
+}
 @media (min-width:20em)and (max-width:89em) {
   .button {
     padding-left: clamp(1.0625rem ,.6458333333rem + 2.0833333333vw ,2.5rem)
@@ -2011,12 +2055,6 @@ svg {
   }
   .header__logo {
     gap: clamp(.9375rem ,.7744565217rem + .8152173913vw ,1.5rem)
-  }
-  .footer {
-    padding-top: clamp(3.125rem ,2.2192028986rem + 4.5289855072vw ,6.25rem)
-  }
-  .footer__form {
-    margin-bottom: clamp(1.875rem ,1.6938405797rem + .9057971014vw ,2.5rem)
   }
   .page__services {
     margin-top: clamp(2.8125rem ,1.9972826087rem + 4.0760869565vw ,5.625rem)
@@ -2105,6 +2143,20 @@ svg {
     -webkit-column-gap: clamp(.9375rem ,-1.6233308436rem + 5.335203195vw ,3.125rem);
     -moz-column-gap: clamp(.9375rem ,-1.6233308436rem + 5.335203195vw ,3.125rem);
     column-gap: clamp(.9375rem ,-1.6233308436rem + 5.335203195vw ,3.125rem)
+  }
+}
+@media (min-width:48em)and (max-width:120em) {
+  .footer {
+    padding-top: clamp(3.125rem ,1.0416666667rem + 4.3402777778vw ,6.25rem)
+  }
+  .reserve__actions {
+    padding-top: clamp(.9375rem ,-.5208333333rem + 3.0381944444vw ,3.125rem)
+  }
+  .form {
+    gap: clamp(.9375rem ,-.5208333333rem + 3.0381944444vw ,3.125rem)
+  }
+  .form--footer {
+    margin-bottom: clamp(.9375rem ,-.1041666667rem + 2.1701388889vw ,2.5rem)
   }
 }
 @media (any-hover:hover) {
