@@ -831,6 +831,7 @@ svg {
 }
 .hero__container {
   position: relative;
+  z-index: 1;
   align-content: center
 }
 .hero__title {
@@ -873,7 +874,9 @@ svg {
   text-transform: uppercase
 }
 .marque {
-  padding-right: 1.875rem
+  padding-right: 1.875rem;
+  -webkit-animation: scroll 120s linear infinite;
+  animation: scroll 120s linear infinite
 }
 @-webkit-keyframes scroll {
   0% {
