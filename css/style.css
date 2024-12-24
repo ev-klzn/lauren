@@ -72,6 +72,7 @@ h6 {
   font-size: inherit
 }
 body {
+  opacity: 0;
   font-weight: 300
 }
 .lock body {
@@ -79,6 +80,10 @@ body {
   touch-action: none;
   -ms-scroll-chaining: none;
   overscroll-behavior: none
+}
+.loaded body {
+  opacity: 1;
+  transition: .2s
 }
 .wrapper {
   min-height: 100%;
