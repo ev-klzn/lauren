@@ -225,7 +225,12 @@ textarea.input {
   height: 4rem
 }
 input:valid {
-  border: 1px solid green
+  border: 1px solid #cd68c0;
+  background-color: #fff;
+  color: #3f1336
+}
+input:invalid {
+  color: red
 }
 .qs-datepicker-container {
   margin: 5px;
@@ -825,7 +830,7 @@ svg {
   display: inline-block
 }
 .menu__link {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #3f1336;
   font-family: "Open Sans";
   font-weight: 600;
@@ -892,6 +897,7 @@ svg {
   padding-bottom: 2.1875rem
 }
 .hero {
+  background-color: #fff;
   min-height: 100vh;
   position: relative;
   z-index: 1
@@ -1031,8 +1037,7 @@ svg {
 }
 .spollers__item {
   font-size: 1.5rem;
-  font-weight: 500;
-  text-transform: capitalize
+  font-weight: 500
 }
 .spollers__title {
   color: #3f1336;
@@ -1049,6 +1054,12 @@ svg {
   list-style: none
 }
 .spollers__title h3 {
+  color: #923984;
+  font-family: "Open Sans";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
   transition: all .3s
 }
 .spollers__title::-webkit-details-marker,
@@ -1444,7 +1455,7 @@ svg {
 .form__input {
   border: 1px solid #f2cff0;
   background: #fff;
-  color: #923984;
+  color: #cd68c0;
   font-family: "Open Sans";
   font-size: 1rem;
   font-style: normal;
@@ -1453,8 +1464,8 @@ svg {
   padding: 1.1875rem 1rem
 }
 .form__input:focus {
-  outline: 1px solid #923984;
-  border-radius: 5px
+  outline: 1px solid #cd68c0;
+  color: #3f1336
 }
 .form__input::-webkit-input-placeholder {
   color: #cd68c0;
@@ -1462,7 +1473,8 @@ svg {
   font-size: 1rem;
   font-style: normal;
   font-weight: 300;
-  line-height: normal
+  line-height: normal;
+  background-color: #fff
 }
 .form__input:-ms-input-placeholder {
   color: #cd68c0;
@@ -1470,7 +1482,8 @@ svg {
   font-size: 1rem;
   font-style: normal;
   font-weight: 300;
-  line-height: normal
+  line-height: normal;
+  background-color: #fff
 }
 .form__input::-ms-input-placeholder {
   color: #cd68c0;
@@ -1478,7 +1491,8 @@ svg {
   font-size: 1rem;
   font-style: normal;
   font-weight: 300;
-  line-height: normal
+  line-height: normal;
+  background-color: #fff
 }
 .form__input::placeholder {
   color: #cd68c0;
@@ -1486,14 +1500,14 @@ svg {
   font-size: 1rem;
   font-style: normal;
   font-weight: 300;
-  line-height: normal
+  line-height: normal;
+  background-color: #fff
 }
 .form__items {
   border: 1px solid #f2cff0;
   background: #fff
 }
 .form__checked {
-  color: #3f1336;
   padding: 1.1875rem 0;
   width: 100%;
   cursor: default;
@@ -1510,7 +1524,13 @@ svg {
 }
 .form__checked span {
   padding-left: 1rem;
-  padding-right: 2.5rem
+  padding-right: 2.5rem;
+  color: #cd68c0;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal
 }
 .form__checked::-webkit-details-marker,
 .form__checked::marker {
@@ -1525,7 +1545,7 @@ svg {
   content: "";
   position: absolute;
   right: 1rem;
-  top: 1rem;
+  top: 1.1875rem;
   display: inline-block;
   background: url(../img/icons/arrow-top.svg) 0 0 no-repeat;
   background-size: cover;
@@ -1573,33 +1593,48 @@ svg {
   transform: translate(0,0)
 }
 .form__item._watcher-view:nth-child(1) {
-  transition-delay: .2s
+  transition-delay: .12s
 }
 .form__item._watcher-view:nth-child(2) {
-  transition-delay: .3s
+  transition-delay: .19s
 }
 .form__item._watcher-view:nth-child(3) {
-  transition-delay: .4s
+  transition-delay: .26s
 }
 .form__item._watcher-view:nth-child(4) {
-  transition-delay: .5s
+  transition-delay: .33s
 }
 .form__item._watcher-view:nth-child(5) {
-  transition-delay: .6s
+  transition-delay: .4s
 }
 .form__item._watcher-view:nth-child(6) {
-  transition-delay: .7s
+  transition-delay: .47s
 }
 .form__item._watcher-view:nth-child(7) {
-  transition-delay: .8s
+  transition-delay: .54s
 }
 .form__item._watcher-view:nth-child(8) {
-  transition-delay: .9s
+  transition-delay: .61s
 }
 .form__item._watcher-view:nth-child(9) {
-  transition-delay: 1s
+  transition-delay: .68s
 }
 .form__item._watcher-view:nth-child(10) {
+  transition-delay: .75s
+}
+.form__item._watcher-view:nth-child(11) {
+  transition-delay: .82s
+}
+.form__item._watcher-view:nth-child(12) {
+  transition-delay: .89s
+}
+.form__item._watcher-view:nth-child(13) {
+  transition-delay: .96s
+}
+.form__item._watcher-view:nth-child(14) {
+  transition-delay: 1.03s
+}
+.form__item._watcher-view:nth-child(15) {
   transition-delay: 1.1s
 }
 .form__title {
@@ -2366,34 +2401,49 @@ svg {
     transform: translate(0,0)
   }
   .form__item._watcher-view:nth-child(1) {
-    transition-delay: .15s
+    transition-delay: 1ms
   }
   .form__item._watcher-view:nth-child(2) {
-    transition-delay: .2s
+    transition-delay: 2ms
   }
   .form__item._watcher-view:nth-child(3) {
-    transition-delay: .25s
+    transition-delay: 3ms
   }
   .form__item._watcher-view:nth-child(4) {
-    transition-delay: .3s
+    transition-delay: 4ms
   }
   .form__item._watcher-view:nth-child(5) {
-    transition-delay: .35s
+    transition-delay: 5ms
   }
   .form__item._watcher-view:nth-child(6) {
-    transition-delay: .4s
+    transition-delay: 6ms
   }
   .form__item._watcher-view:nth-child(7) {
-    transition-delay: .45s
+    transition-delay: 7ms
   }
   .form__item._watcher-view:nth-child(8) {
-    transition-delay: .5s
+    transition-delay: 8ms
   }
   .form__item._watcher-view:nth-child(9) {
-    transition-delay: .55s
+    transition-delay: 9ms
   }
   .form__item._watcher-view:nth-child(10) {
-    transition-delay: .6s
+    transition-delay: 10ms
+  }
+  .form__item._watcher-view:nth-child(11) {
+    transition-delay: 11ms
+  }
+  .form__item._watcher-view:nth-child(12) {
+    transition-delay: 12ms
+  }
+  .form__item._watcher-view:nth-child(13) {
+    transition-delay: 13ms
+  }
+  .form__item._watcher-view:nth-child(14) {
+    transition-delay: 14ms
+  }
+  .form__item._watcher-view:nth-child(15) {
+    transition-delay: 15ms
   }
 }
 @media (max-width:47.99875em)and (any-hover:none) {
