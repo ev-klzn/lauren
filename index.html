@@ -20,7 +20,7 @@
 	<meta name="description" content="Lauren - Flawless Beauty Art">
 	<meta name="robots" content="noindex, nofollow">
 	<title>Lauren Beauty Salon</title>
-	<link rel="stylesheet" href="css/style.min.css?_v=20241225151516">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241226132433">
 	<link rel="shortcut icon" href="favicon.ico">
 </head>
 
@@ -211,32 +211,32 @@
 					<div class="hero__wrapper swiper-wrapper">
 						<div class="hero__slide swiper-slide">
 							<div>
-								<img id="hero__img" class="hero__img ibg" src="img/hero/1.webp" alt="hero-bg" />
+								<img id="hero__img" class="hero__img ibg ibg--right" src="img/hero/1.webp" alt="hero-bg" />
 							</div>
 						</div>
 						<div class="hero__slide swiper-slide">
 							<div>
-								<img class="hero__img ibg" src="img/hero/4.webp" alt="hero-bg" />
+								<img class="hero__img ibg ibg--right" src="img/hero/4.webp" alt="hero-bg" />
 							</div>
 						</div>
 						<div class="hero__slide swiper-slide">
 							<div>
-								<img class="hero__img ibg" src="img/hero/2.webp" alt="hero-bg" />
+								<img class="hero__img ibg ibg--right" src="img/hero/2.webp" alt="hero-bg" />
 							</div>
 						</div>
 						<div class="hero__slide swiper-slide">
 							<div>
-								<img class="hero__img ibg" src="img/hero/5.webp" alt="hero-bg" />
+								<img class="hero__img ibg ibg--right" src="img/hero/5.webp" alt="hero-bg" />
 							</div>
 						</div>
 						<div class="hero__slide swiper-slide">
 							<div>
-								<img class="hero__img ibg" src="img/hero/3.webp" alt="hero-bg" />
+								<img class="hero__img ibg ibg--right" src="img/hero/3.webp" alt="hero-bg" />
 							</div>
 						</div>
 					</div>
 				</div>
-				<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241225151516"></script>
+				<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20241226132433"></script>
 				<script>
 					var swiper = new Swiper(".mySwiper", {
 						loop: true,
@@ -252,18 +252,23 @@
 						},
 						breakpoints: {
 							320: {
-								slidesPerView: 1.1,
+								slidesPerView: 2,
+								spaceBetween: 10,
 							},
 							375: {
-								slidesPerView: 1.2,
+								slidesPerView: 2,
+								spaceBetween: 10,
 							},
 							768: {
-								slidesPerView: 2.1,
-							},
-							992: {
+								spaceBetween: 10,
 								slidesPerView: 3,
 							},
+							992: {
+								spaceBetween: 15,
+								slidesPerView: 4,
+							},
 							1221: {
+								spaceBetween: 20,
 								slidesPerView: 4,
 							},
 							1921: {
@@ -2232,7 +2237,7 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20241225151516"></script>
+	<script src="js/app.min.js?_v=20241226132433"></script>
 </body>
 
 </html>

@@ -928,8 +928,11 @@ svg {
   z-index: 9999!important
 }
 .mySwiper {
-  -webkit-transform: translate(50%,-100%);
-  transform: translate(50%,-100%)
+  -webkit-transform: translate(45%,-100%);
+  transform: translate(45%,-100%)
+}
+.mySwiper .hero__img {
+  aspect-ratio: 4/3
 }
 .ticker__wrap {
   position: relative;
@@ -1183,6 +1186,13 @@ svg {
   display: grid;
   gap: 1.25rem
 }
+.spollers__services li div h3 {
+  color: #3f1336;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal
+}
 .spollers__item {
   opacity: 0;
   transition: opacity .3s
@@ -1376,7 +1386,10 @@ svg {
 }
 .item-portfolio__title {
   color: #3f1336;
-  font-weight: 400
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal
 }
 .item-portfolio__descroption {
   font-size: 1rem;
@@ -1812,13 +1825,10 @@ svg {
     margin-top: 5.625rem
   }
   .page__services {
-    margin-bottom: 5.625rem
-  }
-  .page__services {
     padding-top: 5.625rem
   }
   .page__services {
-    padding-bottom: 5.625rem
+    padding-bottom: 8.125rem
   }
   .page__benefits {
     padding-top: 5.625rem
@@ -1884,10 +1894,7 @@ svg {
     padding-bottom: 1.875rem
   }
   .item-portfolio__body {
-    padding: 1.5625rem
-  }
-  .item-portfolio__title {
-    font-size: 1.5rem
+    padding: 1.875rem
   }
 }
 @media (min-width:120em) {
@@ -1919,7 +1926,11 @@ svg {
 }
 @media (max-width:64em) {
   .hero {
-    padding-top: 5rem
+    padding-top: 13.75rem
+  }
+  .mySwiper {
+    -webkit-transform: translate(25%,-100%);
+    transform: translate(25%,-100%)
   }
   .benefits__list {
     grid-template-columns: repeat(2,1fr)
@@ -1947,7 +1958,7 @@ svg {
     padding-right: 1.0625rem
   }
   .title {
-    font-size: 1.5rem
+    font-size: 2.5rem
   }
   .round {
     width: 6.25rem
@@ -1968,13 +1979,10 @@ svg {
     margin-top: 2.8125rem
   }
   .page__services {
-    margin-bottom: 2.8125rem
-  }
-  .page__services {
     padding-top: 2.8125rem
   }
   .page__services {
-    padding-bottom: 2.8125rem
+    padding-bottom: 5rem
   }
   .page__benefits {
     padding-top: 2.8125rem
@@ -2042,9 +2050,6 @@ svg {
   .item-portfolio__body {
     padding: .9375rem
   }
-  .item-portfolio__title {
-    font-size: 1.375rem
-  }
 }
 @media (max-width:63.99875em) {
   .portfolio__list {
@@ -2060,20 +2065,17 @@ svg {
     top: 0
   }
 }
-@media (max-width:61.99875em) {
+@media (max-width:61.99875em)and (max-width:20em) {
   .hero {
-    padding-top: 0;
-    display: grid
+    padding-top: 10.625rem
   }
+}
+@media (max-width:61.99875em) {
   .hero__title {
-    max-width: 90%
+    max-width: 100%
   }
   .hero__text {
-    max-width: 90%
-  }
-  .mySwiper {
-    -webkit-transform: translate(0,-100%);
-    transform: translate(0,-100%)
+    max-width: 100%
   }
   .tabs {
     margin-left: -.9375rem;
@@ -2471,7 +2473,7 @@ svg {
     padding-right: clamp(1.0625rem ,.6458333333rem + 2.0833333333vw ,2.5rem)
   }
   .title {
-    font-size: clamp(1.5rem ,.1231884058rem + 6.884057971vw ,6.25rem)
+    font-size: clamp(2.5rem ,1.4130434783rem + 5.4347826087vw ,6.25rem)
   }
   .round {
     width: clamp(6.25rem ,4.9456521739rem + 6.5217391304vw ,10.75rem)
@@ -2492,13 +2494,10 @@ svg {
     margin-top: clamp(2.8125rem ,1.9972826087rem + 4.0760869565vw ,5.625rem)
   }
   .page__services {
-    margin-bottom: clamp(2.8125rem ,1.9972826087rem + 4.0760869565vw ,5.625rem)
-  }
-  .page__services {
     padding-top: clamp(2.8125rem ,1.9972826087rem + 4.0760869565vw ,5.625rem)
   }
   .page__services {
-    padding-bottom: clamp(2.8125rem ,1.9972826087rem + 4.0760869565vw ,5.625rem)
+    padding-bottom: clamp(5rem ,4.0942028986rem + 4.5289855072vw ,8.125rem)
   }
   .page__benefits {
     padding-top: clamp(2.8125rem ,1.9972826087rem + 4.0760869565vw ,5.625rem)
@@ -2564,10 +2563,7 @@ svg {
     padding-bottom: clamp(1.25rem ,1.0688405797rem + .9057971014vw ,1.875rem)
   }
   .item-portfolio__body {
-    padding: clamp(.9375rem ,.7563405797rem + .9057971014vw ,1.5625rem)
-  }
-  .item-portfolio__title {
-    font-size: clamp(1.375rem ,1.3387681159rem + .1811594203vw ,1.5rem)
+    padding: clamp(.9375rem ,.6657608696rem + 1.3586956522vw ,1.875rem)
   }
 }
 @media (min-width:47.99875em)and (max-width:89em) {
@@ -2593,7 +2589,17 @@ svg {
 }
 @media (min-width:64em)and (max-width:120em) {
   .hero {
-    padding-top: clamp(5rem ,-8.5714285714rem + 21.2053571429vw ,16.875rem)
+    padding-top: clamp(13.75rem ,10.1785714286rem + 5.5803571429vw ,16.875rem)
+  }
+}
+@media (max-width:61.99875em)and (min-width:89em) {
+  .hero {
+    padding-top: 15.625rem
+  }
+}
+@media (max-width:61.99875em)and (min-width:20em)and (max-width:89em) {
+  .hero {
+    padding-top: clamp(10.625rem ,9.1757246377rem + 7.2463768116vw ,15.625rem)
   }
 }
 @media (any-hover:hover) {
