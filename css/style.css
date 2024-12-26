@@ -1801,9 +1801,6 @@ svg {
   .title {
     font-size: 6.25rem
   }
-  .round {
-    width: 10.75rem
-  }
   .header-block--mb {
     margin-bottom: 5.625rem
   }
@@ -1959,9 +1956,6 @@ svg {
   }
   .title {
     font-size: 2.5rem
-  }
-  .round {
-    width: 6.25rem
   }
   .header-block--mb {
     margin-bottom: 2.8125rem
@@ -2488,9 +2482,6 @@ svg {
   }
   .title {
     font-size: clamp(2.5rem ,1.4130434783rem + 5.4347826087vw ,6.25rem)
-  }
-  .round {
-    width: clamp(6.25rem ,4.9456521739rem + 6.5217391304vw ,10.75rem)
   }
   .header-block--mb {
     margin-bottom: clamp(2.8125rem ,1.9972826087rem + 4.0760869565vw ,5.625rem)
