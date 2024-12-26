@@ -167,7 +167,7 @@ textarea {
 .input[placeholder]:not([data-placeholder-nohiden])::-webkit-input-placeholder {
   -webkit-transition: opacity .3s;
   transition: opacity .3s;
-  color: #923984;
+  color: #cd68c0;
   font-family: "Open Sans";
   font-size: 1rem;
   font-style: normal;
@@ -178,7 +178,7 @@ textarea {
 .input[placeholder]:not([data-placeholder-nohiden]):-ms-input-placeholder {
   -ms-transition: opacity .3s;
   transition: opacity .3s;
-  color: #923984;
+  color: #cd68c0;
   font-family: "Open Sans";
   font-size: 1rem;
   font-style: normal;
@@ -189,7 +189,7 @@ textarea {
 .input[placeholder]:not([data-placeholder-nohiden])::-ms-input-placeholder {
   -ms-transition: opacity .3s;
   transition: opacity .3s;
-  color: #923984;
+  color: #cd68c0;
   font-family: "Open Sans";
   font-size: 1rem;
   font-style: normal;
@@ -199,7 +199,7 @@ textarea {
 }
 .input[placeholder]:not([data-placeholder-nohiden])::placeholder {
   transition: opacity .3s;
-  color: #923984;
+  color: #cd68c0;
   font-family: "Open Sans";
   font-size: 1rem;
   font-style: normal;
@@ -2071,11 +2071,25 @@ svg {
   }
 }
 @media (max-width:61.99875em) {
+  .hero::before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    background: rgba(255,255,255,.3490196078)
+  }
   .hero__title {
     max-width: 100%
   }
   .hero__text {
-    max-width: 100%
+    max-width: 100%;
+    font-size: 1.25rem;
+    font-weight: 600
   }
   .tabs {
     margin-left: -.9375rem;
