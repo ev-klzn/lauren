@@ -695,10 +695,10 @@ svg {
   pointer-events: none
 }
 .round {
-  pointer-events: none;
-  width: 10.75rem;
   -webkit-animation: spin 20s linear infinite;
   animation: spin 20s linear infinite;
+  pointer-events: none;
+  width: 10.75rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -718,42 +718,42 @@ svg {
 }
 @-webkit-keyframes spin {
   0% {
-    -webkit-transform: translate(-50%,-50%) rotate(0);
-    transform: translate(-50%,-50%) rotate(0)
+    -webkit-transform: translate(-86px,-86px) rotate(0);
+    transform: translate(-86px,-86px) rotate(0)
   }
   100% {
-    -webkit-transform: translate(-50%,-50%) rotate(360deg);
-    transform: translate(-50%,-50%) rotate(360deg)
+    -webkit-transform: translate(-86px,-86px) rotate(360deg);
+    transform: translate(-86px,-86px) rotate(360deg)
   }
 }
 @keyframes spin {
   0% {
-    -webkit-transform: translate(-50%,-50%) rotate(0);
-    transform: translate(-50%,-50%) rotate(0)
+    -webkit-transform: translate(-86px,-86px) rotate(0);
+    transform: translate(-86px,-86px) rotate(0)
   }
   100% {
-    -webkit-transform: translate(-50%,-50%) rotate(360deg);
-    transform: translate(-50%,-50%) rotate(360deg)
+    -webkit-transform: translate(-86px,-86px) rotate(360deg);
+    transform: translate(-86px,-86px) rotate(360deg)
   }
 }
 @-webkit-keyframes spinrb {
   0% {
-    -webkit-transform: translate(50%,50%) rotate(0);
-    transform: translate(50%,50%) rotate(0)
+    -webkit-transform: translate(86px,86px) rotate(0);
+    transform: translate(86px,86px) rotate(0)
   }
   100% {
-    -webkit-transform: translate(50%,50%) rotate(360deg);
-    transform: translate(50%,50%) rotate(360deg)
+    -webkit-transform: translate(86px,86px) rotate(360deg);
+    transform: translate(86px,86px) rotate(360deg)
   }
 }
 @keyframes spinrb {
   0% {
-    -webkit-transform: translate(50%,50%) rotate(0);
-    transform: translate(50%,50%) rotate(0)
+    -webkit-transform: translate(86px,86px) rotate(0);
+    transform: translate(86px,86px) rotate(0)
   }
   100% {
-    -webkit-transform: translate(50%,50%) rotate(360deg);
-    transform: translate(50%,50%) rotate(360deg)
+    -webkit-transform: translate(86px,86px) rotate(360deg);
+    transform: translate(86px,86px) rotate(360deg)
   }
 }
 .header-block__title {
@@ -913,7 +913,7 @@ svg {
 }
 .hero__container {
   position: relative;
-  z-index: 999;
+  z-index: 9999;
   align-content: center
 }
 .hero__title {
@@ -928,11 +928,11 @@ svg {
   z-index: 9999!important
 }
 .mySwiper {
-  -webkit-transform: translate(45%,-100%);
-  transform: translate(45%,-100%)
+  -webkit-transform: translate(47%,-100%);
+  transform: translate(47%,-100%)
 }
 .mySwiper .hero__img {
-  aspect-ratio: 4/3
+  aspect-ratio: 45/30
 }
 .ticker__wrap {
   position: relative;
@@ -2084,6 +2084,9 @@ svg {
     max-width: 100%;
     font-size: 1.25rem;
     font-weight: 600
+  }
+  .mySwiper .hero__img {
+    aspect-ratio: 4/3
   }
   .tabs {
     margin-left: -.9375rem;
