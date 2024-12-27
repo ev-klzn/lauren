@@ -917,10 +917,10 @@ svg {
   align-content: center
 }
 .hero__title {
-  max-width: 37.5rem
+  max-width: 45%
 }
 .hero__text {
-  max-width: 36.625rem
+  max-width: 45%
 }
 .hero__button {
   position: relative;
@@ -1102,11 +1102,11 @@ svg {
 }
 .spollers__services li {
   opacity: 0;
-  -webkit-transform: translate(0,10%);
-  transform: translate(0,10%);
-  transition: opacity .3s,-webkit-transform .3s;
-  transition: opacity .3s,transform .3s;
-  transition: opacity .3s,transform .3s,-webkit-transform .3s;
+  -webkit-transform: translate(0,5%);
+  transform: translate(0,5%);
+  transition: opacity .5s,-webkit-transform .5s;
+  transition: opacity .5s,transform .5s;
+  transition: opacity .5s,transform .5s,-webkit-transform .5s;
   cursor: pointer;
   padding-bottom: 1.25rem;
   border-bottom: 1px solid #f2cff0
@@ -1165,7 +1165,6 @@ svg {
   margin-bottom: 1.25rem
 }
 .spollers__services li div:nth-child(1) {
-  transition: color .3s;
   display: flex;
   justify-content: space-between;
   color: #3f1336;
@@ -1175,6 +1174,10 @@ svg {
   font-weight: 400;
   line-height: normal;
   margin-bottom: 1.25rem
+}
+.spollers__services li div:nth-child(1) div,
+.spollers__services li div:nth-child(1) h3 {
+  transition: all .3s
 }
 .spollers__services li div p {
   font-family: "Open Sans";
@@ -1195,7 +1198,7 @@ svg {
 }
 .spollers__item {
   opacity: 0;
-  transition: opacity .3s
+  transition: opacity .5s
 }
 .spollers__item._watcher-view {
   opacity: 1
@@ -1241,11 +1244,11 @@ svg {
 }
 .item-benefits {
   opacity: 0;
-  -webkit-transform: translate(0,10%);
-  transform: translate(0,10%);
-  transition: opacity .3s,-webkit-transform .3s;
-  transition: opacity .3s,transform .3s;
-  transition: opacity .3s,transform .3s,-webkit-transform .3s;
+  -webkit-transform: translate(0,5%);
+  transform: translate(0,5%);
+  transition: opacity .5s,-webkit-transform .5s;
+  transition: opacity .5s,transform .5s;
+  transition: opacity .5s,transform .5s,-webkit-transform .5s;
   background-color: #faedfa
 }
 .item-benefits._watcher-view {
@@ -1310,11 +1313,11 @@ svg {
 }
 .item-portfolio {
   opacity: 0;
-  -webkit-transform: translate(0,10%);
-  transform: translate(0,10%);
-  transition: opacity .3s,-webkit-transform .3s;
-  transition: opacity .3s,transform .3s;
-  transition: opacity .3s,transform .3s,-webkit-transform .3s;
+  -webkit-transform: translate(0,5%);
+  transform: translate(0,5%);
+  transition: opacity .5s,-webkit-transform .5s;
+  transition: opacity .5s,transform .5s;
+  transition: opacity .5s,transform .5s,-webkit-transform .5s;
   background-color: #fdf6fc;
   position: relative;
   overflow: hidden
@@ -1596,9 +1599,9 @@ svg {
   opacity: 0;
   -webkit-transform: translate(0,15%);
   transform: translate(0,15%);
-  transition: opacity .3s,-webkit-transform .3s;
-  transition: opacity .3s,transform .3s;
-  transition: opacity .3s,transform .3s,-webkit-transform .3s
+  transition: opacity .5s,-webkit-transform .5s;
+  transition: opacity .5s,transform .5s;
+  transition: opacity .5s,transform .5s,-webkit-transform .5s
 }
 .form__item._watcher-view {
   opacity: 1;
@@ -1923,7 +1926,7 @@ svg {
 }
 @media (max-width:64em) {
   .hero {
-    padding-top: 13.75rem
+    padding-top: 12.5rem
   }
   .mySwiper {
     -webkit-transform: translate(25%,-100%);
@@ -2597,7 +2600,7 @@ svg {
 }
 @media (min-width:64em)and (max-width:120em) {
   .hero {
-    padding-top: clamp(13.75rem ,10.1785714286rem + 5.5803571429vw ,16.875rem)
+    padding-top: clamp(12.5rem ,7.5rem + 7.8125vw ,16.875rem)
   }
 }
 @media (max-width:61.99875em)and (min-width:89em) {
@@ -2626,7 +2629,8 @@ svg {
   .spollers__title h3:hover {
     color: #cd68c0
   }
-  .spollers__services li:hover div:nth-child(1) {
+  .spollers__services li:hover div:nth-child(1) div,
+  .spollers__services li:hover div:nth-child(1) h3 {
     color: #cd68c0
   }
   .item-portfolio:hover .item-portfolio__body {
