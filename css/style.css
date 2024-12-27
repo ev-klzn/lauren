@@ -1925,9 +1925,6 @@ svg {
   }
 }
 @media (max-width:64em) {
-  .hero {
-    padding-top: 12.5rem
-  }
   .mySwiper {
     -webkit-transform: translate(25%,-100%);
     transform: translate(25%,-100%)
@@ -2048,6 +2045,11 @@ svg {
     padding: .9375rem
   }
 }
+@media (max-width:64.0625em) {
+  .hero {
+    padding-top: 10rem
+  }
+}
 @media (max-width:63.99875em) {
   .portfolio__list {
     grid-template-columns: repeat(2,1fr)
@@ -2064,7 +2066,7 @@ svg {
 }
 @media (max-width:61.99875em)and (max-width:20em) {
   .hero {
-    padding-top: 10.625rem
+    padding-top: 12.5rem
   }
 }
 @media (max-width:61.99875em) {
@@ -2208,6 +2210,9 @@ svg {
   }
   .footer__body {
     max-width: 100%
+  }
+  .hero {
+    padding-top: 12.5rem
   }
   .hero__text {
     max-width: 100%
@@ -2479,6 +2484,11 @@ svg {
     grid-template-columns: auto
   }
 }
+@media (max-width:23.4375em)and (max-width:20em) {
+  .hero {
+    padding-top: 5.625rem
+  }
+}
 @media (min-width:20em)and (max-width:89em) {
   .button {
     padding-left: clamp(1.0625rem ,.6458333333rem + 2.0833333333vw ,2.5rem)
@@ -2598,9 +2608,9 @@ svg {
     margin-bottom: clamp(.9375rem ,-.1041666667rem + 2.1701388889vw ,2.5rem)
   }
 }
-@media (min-width:64em)and (max-width:120em) {
+@media (min-width:64.0625em)and (max-width:120em) {
   .hero {
-    padding-top: clamp(12.5rem ,7.5rem + 7.8125vw ,16.875rem)
+    padding-top: clamp(10rem ,2.126396648rem + 12.2905027933vw ,16.875rem)
   }
 }
 @media (max-width:61.99875em)and (min-width:89em) {
@@ -2610,7 +2620,17 @@ svg {
 }
 @media (max-width:61.99875em)and (min-width:20em)and (max-width:89em) {
   .hero {
-    padding-top: clamp(10.625rem ,9.1757246377rem + 7.2463768116vw ,15.625rem)
+    padding-top: clamp(12.5rem ,11.5942028986rem + 4.5289855072vw ,15.625rem)
+  }
+}
+@media (max-width:23.4375em)and (min-width:89em) {
+  .hero {
+    padding-top: 12.5rem
+  }
+}
+@media (max-width:23.4375em)and (min-width:20em)and (max-width:89em) {
+  .hero {
+    padding-top: clamp(5.625rem ,3.6322463768rem + 9.9637681159vw ,12.5rem)
   }
 }
 @media (any-hover:hover) {
