@@ -928,8 +928,8 @@ svg {
   z-index: 9999!important
 }
 .mySwiper {
-  -webkit-transform: translate(47%,-100%);
-  transform: translate(47%,-100%)
+  -webkit-transform: translate(49%,-100%);
+  transform: translate(49%,-100%)
 }
 .mySwiper .hero__img {
   aspect-ratio: 45/30
