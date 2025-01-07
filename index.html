@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z068Y1ZDXC&_v=20250106103433"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z068Y1ZDXC&_v=20250107093828"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 
@@ -19,7 +19,7 @@
 	<meta name="description" content="Lauren - Flawless Beauty Art">
 	<meta name="robots" content="noindex, nofollow">
 	<title>Lauren Beauty Salon</title>
-	<link rel="stylesheet" href="css/style.min.css?_v=20250106103433">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250107093828">
 	<link rel="shortcut icon" href="favicon.ico">
 </head>
 
@@ -116,7 +116,7 @@
 						</div>
 						<div class="hero__slide swiper-slide">
 							<div class="page__hero hero">
-								<img class="hero__image ibg ibg--right ibg--top" src="img/hero/2.webp" alt="hero-bg" />
+								<img class="hero__image ibg ibg--right" src="img/hero/2.webp" alt="hero-bg" />
 								<div class="hero__container">
 									<h2 data-watch data-watch-once data-watch-threshold="0.6" class="hero__title title">
 										Radiant Hair Revival
@@ -176,7 +176,7 @@
 						</div>
 						<div class="hero__slide swiper-slide">
 							<div class="page__hero hero">
-								<img class="hero__image ibg ibg--top" src="img/hero/3.webp" alt="hero-bg" />
+								<img class="hero__image ibg" src="img/hero/3.webp" alt="hero-bg" />
 								<div class="hero__container">
 									<h2 data-watch data-watch-once data-watch-threshold="0.6" class="hero__title title">
 										Lush Lash Look
@@ -235,7 +235,7 @@
 						</div>
 					</div>
 				</div>
-				<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250106103433"></script>
+				<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250107093828"></script>
 				<script>
 					var swiper = new Swiper(".mySwiper", {
 						loop: true,
@@ -245,6 +245,7 @@
 						speed: 2000,
 						observer: true,
 						observeParents: true,
+						autoheight: true,
 						autoplay: {
 							delay: 4000,
 							disableOnInteraction: false,
@@ -258,9 +259,9 @@
 								spaceBetween: 10,
 								slidesPerView: 2,
 							},
-							768: {
+							767: {
 								spaceBetween: 10,
-								slidesPerView: 3,
+								slidesPerView: 2,
 							},
 							992: {
 								spaceBetween: 15,
@@ -574,17 +575,17 @@
 						</div>
 					</div>
 				</div>
-				<script>
-					const block1 = document.getElementById("hero__img");
-					const block2 = document.getElementById("ticker");
-					const resizeObserver = new ResizeObserver((entries) => {
-						for (let entry of entries) {
-							const height = entry.contentRect.height;
-							block2.style.marginTop = `-${height}px`;
-						}
-					});
-					resizeObserver.observe(block1);
-				</script>
+				<!-- <script>
+            const block1 = document.getElementById("hero__img");
+            const block2 = document.getElementById("ticker");
+            const resizeObserver = new ResizeObserver((entries) => {
+              for (let entry of entries) {
+                const height = entry.contentRect.height;
+                block2.style.marginTop = `-${height}px`;
+              }
+            });
+            resizeObserver.observe(block1);
+          </script> -->
 			</div>
 			<section class="page__services services">
 				<div class="services__container">
@@ -2237,7 +2238,7 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20250106103433"></script>
+	<script src="js/app.min.js?_v=20250107093828"></script>
 </body>
 
 </html>
