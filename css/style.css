@@ -933,15 +933,13 @@ svg {
 }
 .hero__thumbs {
   background-color: #fff;
-  background-color: rgba(253,246,252,.2039215686);
-  -webkit-transform: translate(26%,0);
-  transform: translate(26%,0)
+  background-color: rgba(253,246,252,.2039215686)
 }
 .mySwiper .hero__img {
   aspect-ratio: 45/30
 }
-.sliders {
-  background-color: rgba(253,246,252,.2039215686)
+.mySwiper2 .swiper-slide {
+  min-height: 33.125rem
 }
 .ticker__wrap {
   position: relative;
@@ -2050,6 +2048,17 @@ svg {
   }
 }
 @media (max-width:63.99875em) {
+  .hero__container {
+    max-width: 100%
+  }
+  .hero__title {
+    max-width: 100%
+  }
+  .hero__text {
+    max-width: 100%;
+    font-size: 1.25rem;
+    font-weight: 600
+  }
   .portfolio__list {
     grid-template-columns: repeat(2,1fr)
   }
@@ -2063,21 +2072,26 @@ svg {
     top: 0
   }
 }
+@media (max-width:61.99875em)and (max-width:20em) {
+  .hero {
+    padding-top: 9.375rem
+  }
+}
 @media (max-width:61.99875em) {
+  .hero::before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    background: rgba(255,255,255,.3490196078)
+  }
   .hero__image {
     aspect-ratio: 1/2
-  }
-  .hero__title {
-    max-width: 50%
-  }
-  .hero__text {
-    max-width: 50%;
-    font-size: 1.25rem;
-    font-weight: 600
-  }
-  .hero__thumbs {
-    -webkit-transform: translate(0,0);
-    transform: translate(0,0)
   }
   .mySwiper .hero__img {
     aspect-ratio: 4/3
@@ -2199,9 +2213,6 @@ svg {
   }
   .footer__body {
     max-width: 100%
-  }
-  .hero__text {
-    max-width: 50%
   }
   .tabs__navigation {
     justify-content: space-evenly
@@ -2466,11 +2477,6 @@ svg {
     grid-template-columns: auto
   }
 }
-@media (max-width:23.4375em)and (max-width:20em) {
-  .hero {
-    padding-top: 5.625rem
-  }
-}
 @media (min-width:20em)and (max-width:89em) {
   .button {
     padding-left: clamp(1.0625rem ,.6458333333rem + 2.0833333333vw ,2.5rem)
@@ -2592,14 +2598,14 @@ svg {
     padding-top: clamp(9.375rem ,-8.5195530726rem + 27.9329608939vw ,25rem)
   }
 }
-@media (max-width:23.4375em)and (min-width:89em) {
+@media (max-width:61.99875em)and (min-width:89em) {
   .hero {
-    padding-top: 9.375rem
+    padding-top: 15.625rem
   }
 }
-@media (max-width:23.4375em)and (min-width:20em)and (max-width:89em) {
+@media (max-width:61.99875em)and (min-width:20em)and (max-width:89em) {
   .hero {
-    padding-top: clamp(5.625rem ,4.5380434783rem + 5.4347826087vw ,9.375rem)
+    padding-top: clamp(9.375rem ,7.5634057971rem + 9.0579710145vw ,15.625rem)
   }
 }
 @media (any-hover:hover) {
