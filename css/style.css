@@ -894,8 +894,7 @@ svg {
   transition: all .3s
 }
 .page__ticker {
-  padding-top: 3.125rem;
-  padding-bottom: 3.125rem
+  padding-top: 3.125rem
 }
 .hero {
   background-color: #fff;
@@ -979,7 +978,7 @@ svg {
   text-transform: uppercase
 }
 .marque {
-  padding-right: 1.875rem;
+  padding-right: 2.5rem;
   -webkit-animation: scroll 120s linear infinite;
   animation: scroll 120s linear infinite
 }
@@ -989,8 +988,8 @@ svg {
     transform: translateX(0)
   }
   100% {
-    -webkit-transform: translateX(calc(-100% - 20px));
-    transform: translateX(calc(-100% - 20px))
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%)
   }
 }
 @keyframes scroll {
@@ -999,8 +998,8 @@ svg {
     transform: translateX(0)
   }
   100% {
-    -webkit-transform: translateX(calc(-100% - 20px));
-    transform: translateX(calc(-100% - 20px))
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%)
   }
 }
 .services {
@@ -1833,6 +1832,9 @@ svg {
   .header__logo {
     gap: 1.5rem
   }
+  .page__ticker {
+    padding-bottom: 5.625rem
+  }
   .page__services {
     padding-top: 5.625rem
   }
@@ -1973,6 +1975,9 @@ svg {
   }
   .header__logo {
     gap: .9375rem
+  }
+  .page__ticker {
+    padding-bottom: 4.375rem
   }
   .page__services {
     padding-top: 2.8125rem
@@ -2502,6 +2507,9 @@ svg {
   }
   .header__logo {
     gap: clamp(.9375rem ,.7744565217rem + .8152173913vw ,1.5rem)
+  }
+  .page__ticker {
+    padding-bottom: clamp(4.375rem ,4.0126811594rem + 1.8115942029vw ,5.625rem)
   }
   .page__services {
     padding-top: clamp(2.8125rem ,1.9972826087rem + 4.0760869565vw ,5.625rem)
