@@ -1,3 +1,2 @@
-/Rubbish
-.DS_store
-**/*.DS_Store
+.vscode/
+*.DS_Store
